@@ -1,0 +1,801 @@
+/* ==========================================================================
+   BUGATTI Design System Mockup Stylesheet
+   ========================================================================== */
+
+:root {
+    /* Color Palette */
+    --canvas: #000000;
+    --surface-soft: #0d0d0d;
+    --surface-card: #141414;
+    --surface-elevated: #1f1f1f;
+    --primary: #ffffff;
+    --on-dark: #ffffff;
+    --body: #cccccc;
+    --body-strong: #e6e6e6;
+    --muted: #999999;
+    --muted-soft: #666666;
+    --link: #c3d9f3;
+    
+    --hairline: #262626;
+    --hairline-strong: #3a3a3a;
+    
+    /* Semantic Colors */
+    --warning: #d4a017;
+    --success: #5fa657;
+
+    /* Fonts */
+    --font-display: 'Saira Condensed', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-text: 'Cormorant Garamond', Garamond, "Times New Roman", serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, "SF Mono", "Cascadia Mono", monospace;
+
+    /* Spacing Scales */
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 64px;
+    --spacing-section: 120px;
+}
+
+/* ==========================================================================
+   Base resets and settings (AUSTERE / PURE BLACK SYSTEM)
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 400; /* RIGID RULE: The system NEVER uses bold weight. Everything is 400. */
+}
+
+body {
+    background-color: var(--canvas);
+    color: var(--body);
+    font-family: var(--font-text);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ==========================================================================
+   Typography Classes
+   ========================================================================== */
+.display-xl {
+    font-family: var(--font-display);
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--on-dark);
+}
+
+.display-lg {
+    font-family: var(--font-display);
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--on-dark);
+}
+
+.display-md {
+    font-family: var(--font-display);
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--on-dark);
+}
+
+.display-sm {
+    font-family: var(--font-display);
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--on-dark);
+}
+
+.caption-uppercase {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--on-dark);
+}
+
+.body-md {
+    font-family: var(--font-text);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: var(--body);
+}
+
+.body-sm {
+    font-family: var(--font-text);
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: var(--muted);
+}
+
+/* ==========================================================================
+   Layout Containers
+   ========================================================================== */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+}
+
+section {
+    padding: var(--spacing-section) 0;
+}
+
+.section-header {
+    margin-bottom: var(--spacing-xxl);
+}
+
+/* ==========================================================================
+   Component: Top Navigation (top-nav)
+   ========================================================================== */
+.top-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 100%;
+    height: 100%;
+    padding: 0 var(--spacing-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn-link {
+    background: transparent;
+    border: none;
+    color: var(--on-dark);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    outline: none;
+}
+
+.bag-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wordmark-display {
+    font-family: var(--font-display);
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 6px;
+    color: var(--on-dark);
+    text-align: center;
+}
+
+/* ==========================================================================
+   Component: Hero Photo Band & Floating Card
+   ========================================================================== */
+.hero-photo-band-section {
+    padding: 0;
+}
+
+.hero-photo-band {
+    height: 100vh;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xxl);
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+    max-width: 800px;
+    z-index: 10;
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--on-dark);
+}
+
+.hero-content .caption-overlay {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--body-strong);
+    max-width: 600px;
+}
+
+/* Primary Button (button-primary) */
+.button-primary {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--on-dark);
+    font-family: var(--font-mono);
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    border: 1px solid var(--primary);
+    border-radius: 9999px; /* rounded.pill */
+    padding: 14px 32px;
+    height: 44px;
+    line-height: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+}
+
+.button-primary:hover {
+    background-color: var(--primary);
+    color: var(--canvas);
+}
+
+/* Floating Career Callout Card */
+.career-callout-card {
+    position: absolute;
+    bottom: var(--spacing-xxl);
+    right: var(--spacing-xl);
+    width: 320px;
+    background-color: var(--surface-card);
+    border-radius: 0px; /* rounded.none */
+    z-index: 20;
+    overflow: hidden;
+}
+
+.card-image-placeholder {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: var(--spacing-md);
+}
+
+.card-text {
+    font-family: var(--font-text);
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--body-strong);
+    margin-bottom: var(--spacing-sm);
+}
+
+.card-link {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--on-dark);
+    display: inline-block;
+    border-bottom: 1px solid var(--hairline-strong);
+    padding-bottom: 2px;
+    transition: border-color 0.3s;
+}
+
+.card-link:hover {
+    border-color: var(--primary);
+}
+
+/* ==========================================================================
+   Component: Spec Cell Grid
+   ========================================================================== */
+.specs-section {
+    border-bottom: 1px solid var(--hairline);
+    padding: var(--spacing-xxl) 0;
+}
+
+.spec-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.spec-cell {
+    padding: var(--spacing-lg) 0;
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.spec-value {
+    font-family: var(--font-display);
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: var(--on-dark);
+    line-height: 1.2;
+}
+
+.spec-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+/* ==========================================================================
+   Component: Photo Breakout Band
+   ========================================================================== */
+.photo-breakout-section {
+    padding: 0;
+}
+
+.breakout-photo-band {
+    height: 60vh;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 var(--spacing-xxl);
+}
+
+.photo-overlay-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    z-index: 10;
+}
+
+.breakout-headline {
+    font-family: var(--font-display);
+    font-size: 48px;
+    letter-spacing: 3px;
+    color: var(--on-dark);
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Component: Model Showcase Grid (model-photo-card)
+   ========================================================================== */
+.models-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.model-photo-card {
+    background-color: var(--canvas);
+    border-radius: 0px; /* rounded.none */
+    display: flex;
+    flex-direction: column;
+}
+
+.model-photo-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin-bottom: var(--spacing-lg);
+}
+
+.model-photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.model-photo-card:hover .model-photo-container img {
+    transform: scale(1.03);
+}
+
+.model-title {
+    font-family: var(--font-display);
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--on-dark);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-xxs);
+}
+
+.model-specs {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Text Link (text-link) */
+.text-link {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--link);
+    display: inline-block;
+    align-self: flex-start;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.3s;
+}
+
+.text-link:hover {
+    border-color: var(--link);
+}
+
+/* ==========================================================================
+   Component: Newsroom Grid (newsroom-article-card)
+   ========================================================================== */
+.newsroom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.newsroom-article-card {
+    background-color: var(--canvas);
+    border: 1px solid var(--hairline);
+    border-radius: 0px; /* rounded.none */
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+}
+
+.article-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.article-metadata {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.date-pill, .category-tag {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.article-title {
+    font-family: var(--font-display);
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--on-dark);
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: var(--spacing-sm);
+}
+
+.article-excerpt {
+    font-family: var(--font-text);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--body);
+}
+
+/* ==========================================================================
+   Component: Careers Listing (career-listing-row)
+   ========================================================================== */
+.careers-listing {
+    border-top: 1px solid var(--hairline);
+}
+
+.career-listing-row {
+    padding: var(--spacing-lg) 0;
+    border-bottom: 1px solid var(--hairline);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.career-listing-row:hover {
+    background-color: var(--surface-soft);
+}
+
+.career-job-title {
+    font-family: var(--font-display);
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--on-dark);
+    text-transform: uppercase;
+}
+
+.career-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.career-location-dept {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.career-arrow {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    color: var(--on-dark);
+    transition: transform 0.3s;
+}
+
+.career-listing-row:hover .career-arrow {
+    transform: translateX(6px);
+}
+
+/* ==========================================================================
+   Component: Subscription CTA band (text-input)
+   ========================================================================== */
+.cta-band-photo-section {
+    padding: 0;
+}
+
+.cta-band-photo {
+    height: 50vh;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xxl);
+}
+
+.cta-form-container {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+    text-align: center;
+}
+
+.cta-headline {
+    font-family: var(--font-display);
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--on-dark);
+    text-transform: uppercase;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.text-input {
+    width: 100%;
+    height: 44px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--hairline-strong);
+    color: var(--on-dark);
+    font-family: var(--font-text);
+    font-size: 16px;
+    padding: 12px 0;
+    outline: none;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: border-bottom-color 0.3s;
+}
+
+.text-input::placeholder {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.text-input:focus {
+    border-bottom-color: var(--primary);
+}
+
+.subscribe-status-msg {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--success);
+    height: 16px;
+}
+
+.subscribe-status-msg.error {
+    color: var(--warning);
+}
+
+/* ==========================================================================
+   Component: Footer
+   ========================================================================== */
+footer {
+    background-color: var(--canvas);
+    border-top: 1px solid var(--hairline);
+    padding: var(--spacing-xxl) 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xxl);
+}
+
+.footer-column h4 {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--on-dark);
+    margin-bottom: var(--spacing-lg);
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.footer-column a {
+    font-family: var(--font-text);
+    font-size: 14px;
+    color: var(--muted);
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: var(--on-dark);
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--hairline);
+}
+
+.copyright {
+    font-family: var(--font-text);
+    font-size: 14px;
+    color: var(--muted-soft);
+    text-align: center;
+}
+
+.footer-wordmark {
+    font-family: var(--font-display);
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 6px;
+    color: var(--muted);
+    opacity: 0.5;
+}
+
+/* ==========================================================================
+   Responsive Behavior / Media Queries
+   ========================================================================== */
+
+/* Mobile layouts (< 768px) */
+@media (max-width: 768px) {
+    :root {
+        --spacing-section: 80px;
+    }
+
+    section {
+        padding: var(--spacing-section) 0;
+    }
+
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+
+    .hero-title {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    .career-callout-card {
+        display: none; /* Hide desktop-only callout */
+    }
+
+    .spec-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .models-grid,
+    .newsroom-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .display-lg {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .career-listing-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    .career-meta {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Tablet layouts (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .spec-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

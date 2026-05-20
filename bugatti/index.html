@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bugatti Design Analysis. An austere luxury-automotive interface showcasing engineered precision, custom typefaces, and full-bleed automotive photography.">
+    <title>BUGATTI | Design System Mockup</title>
+    <!-- Google Fonts: Saira Condensed (Substitute for Bugatti Display), Cormorant Garamond (Substitute for Bugatti Text Regular), JetBrains Mono (Substitute for Bugatti Monospace) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400&family=Saira+Condensed:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <header class="top-nav">
+        <div class="nav-container">
+            <button id="menu-btn" class="nav-btn-link" aria-label="Toggle navigation menu">MENU</button>
+            <div class="wordmark-display">BUGATTI</div>
+            <button id="store-btn" class="nav-btn-link" aria-label="Open boutique store">
+                STORE
+                <svg class="bag-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Photo Band Section -->
+        <section class="hero-photo-band-section">
+            <div class="hero-photo-band" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('assets/hero_tourbillon.png');">
+                <div class="hero-content">
+                    <h1 class="hero-title">THE BUGATTI TOURBILLON</h1>
+                    <div class="caption-overlay">FORM FOLLOWS PERFORMANCE. 1,800 HORSEPOWER. V16 HYBRID NATURALLY ASPIRATED.</div>
+                    <a href="#specs" class="button-primary">DISCOVER TOURBILLON</a>
+                </div>
+                
+                <!-- Desktop-only Floating Career Callout Card -->
+                <div class="career-callout-card">
+                    <div class="card-image-placeholder" style="background-image: url('assets/career_bg.png');"></div>
+                    <div class="card-content">
+                        <p class="card-text">Are you ready for a new adventure?</p>
+                        <a href="#careers" class="card-link">EXPLORE OUR OPPORTUNITIES</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications Section -->
+        <section id="specs" class="specs-section">
+            <div class="container spec-grid">
+                <div class="spec-cell">
+                    <div class="spec-value">1,800 HP</div>
+                    <div class="spec-label">MAXIMUM POWER</div>
+                </div>
+                <div class="spec-cell">
+                    <div class="spec-value">445 KM/H</div>
+                    <div class="spec-label">TOP SPEED</div>
+                </div>
+                <div class="spec-cell">
+                    <div class="spec-value">2.0 S</div>
+                    <div class="spec-label">0-100 KM/H ACCELERATION</div>
+                </div>
+                <div class="spec-cell">
+                    <div class="spec-value">8.3 L V16</div>
+                    <div class="spec-label">ENGINE CONFIGURATION</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Spec Detail Highlight Photo Band -->
+        <section class="photo-breakout-section">
+            <div class="breakout-photo-band" style="background-image: url('assets/specs_bg.png');">
+                <div class="photo-overlay-content">
+                    <div class="caption-overlay">ENGINEERED ELEGANCE</div>
+                    <h2 class="breakout-headline">THE ART OF MECHANICS</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model Lineup Section -->
+        <section class="models-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="display-lg">THE MODEL RANGE</h2>
+                </div>
+                <div class="models-grid">
+                    <!-- Model 1 -->
+                    <div class="model-photo-card">
+                        <div class="model-photo-container">
+                            <img src="assets/hero_tourbillon.png" alt="Bugatti Tourbillon in studio profile">
+                        </div>
+                        <h3 class="model-title">TOURBILLON</h3>
+                        <div class="model-specs">V16 HYBRID / 1800 HP / COUPE</div>
+                        <a href="#" class="text-link">DISCOVER</a>
+                    </div>
+                    <!-- Model 2 -->
+                    <div class="model-photo-card">
+                        <div class="model-photo-container">
+                            <img src="assets/model_bolide.png" alt="Bugatti Bolide track testing at dusk">
+                        </div>
+                        <h3 class="model-title">BOLIDE</h3>
+                        <div class="model-specs">W16 QUAD-TURBO / 1824 HP / TRACK ONLY</div>
+                        <a href="#" class="text-link">DISCOVER</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsroom Section -->
+        <section class="newsroom-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="display-lg">NEWSROOM</h2>
+                </div>
+                <div class="newsroom-grid">
+                    <!-- News Card 1 -->
+                    <article class="newsroom-article-card">
+                        <div class="article-image" style="background-image: url('assets/hero_tourbillon.png');"></div>
+                        <div class="article-metadata">
+                            <span class="date-pill">12. NOVEMBER 2025</span>
+                            <span class="category-tag">HERITAGE</span>
+                        </div>
+                        <h3 class="article-title">BUGATTI DELIVERS FIRST CUSTOMER CENTODIECI</h3>
+                        <p class="article-excerpt">
+                            A tribute to the legendary EB110, the Centodieci represents the pinnacle of coachbuilding tradition, merging timeless elegance with pure engineering.
+                        </p>
+                    </article>
+                    <!-- News Card 2 -->
+                    <article class="newsroom-article-card">
+                        <div class="article-image" style="background-image: url('assets/specs_bg.png');"></div>
+                        <div class="article-metadata">
+                            <span class="date-pill">28. OCTOBER 2025</span>
+                            <span class="category-tag">ENGINEERING</span>
+                        </div>
+                        <h3 class="article-title">THE V16 HYBRID ENGINE: A NEW ERA OF SPEED</h3>
+                        <p class="article-excerpt">
+                            An in-depth exploration into the engineering marvel behind Bugatti's latest naturally aspirated powertrain, developing unprecedented mechanical voltage.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Listing Section -->
+        <section id="careers" class="careers-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="display-lg">CAREERS AT MOLSHEIM</h2>
+                </div>
+                <div class="careers-listing">
+                    <!-- Row 1 -->
+                    <div class="career-listing-row">
+                        <h3 class="career-job-title">AERODYNAMICS ENGINEER</h3>
+                        <div class="career-meta">
+                            <span class="career-location-dept">MOLSHEIM, FR / ENGINEERING</span>
+                            <span class="career-arrow">→</span>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="career-listing-row">
+                        <h3 class="career-job-title">CARBON COMPOSITES SPECIALIST</h3>
+                        <div class="career-meta">
+                            <span class="career-location-dept">CAMPUS MOLSHEIM / PRODUCTION</span>
+                            <span class="career-arrow">→</span>
+                        </div>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="career-listing-row">
+                        <h3 class="career-job-title">POWERTRAIN INTEGRATION LEAD</h3>
+                        <div class="career-meta">
+                            <span class="career-location-dept">MOLSHEIM, FR / ENGINEERING</span>
+                            <span class="career-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription Band -->
+        <section class="cta-band-photo-section">
+            <div class="cta-band-photo" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/career_bg.png');">
+                <div class="cta-form-container">
+                    <h2 class="cta-headline">SUBSCRIBE TO THE JOURNAL</h2>
+                    <form id="bugatti-subscribe-form" class="subscribe-form" action="#" method="POST">
+                        <div class="input-group">
+                            <input type="email" id="subscriber-email" class="text-input" placeholder="ENTER YOUR EMAIL" required>
+                            <span class="focus-line"></span>
+                        </div>
+                        <button type="submit" class="button-primary">SUBSCRIBE</button>
+                    </form>
+                    <div id="subscribe-status" class="subscribe-status-msg"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h4>MODELS</h4>
+                <ul>
+                    <li><a href="#">CHIRON</a></li>
+                    <li><a href="#">BOLIDE</a></li>
+                    <li><a href="#">TOURBILLON</a></li>
+                    <li><a href="#">W16 MISTRAL</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>BRAND</h4>
+                <ul>
+                    <li><a href="#">HERITAGE</a></li>
+                    <li><a href="#">MOLSHEIM CAMPUS</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">NEWSROOM</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CONNECT</h4>
+                <ul>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">PRESS</a></li>
+                    <li><a href="#">CONFIGURATOR</a></li>
+                    <li><a href="#">STORE</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">IMPRINT</a></li>
+                    <li><a href="#">COOKIE SETTINGS</a></li>
+                    <li><a href="#">LEGAL STATEMENT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">BUGATTI AUTOMOBILES S.A.S. ALL RIGHTS RESERVED.</p>
+            <div class="footer-wordmark">BUGATTI</div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
