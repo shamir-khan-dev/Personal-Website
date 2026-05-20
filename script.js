@@ -1,33 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ==========================================================================
-    // Theme Switcher (Dark / Light Theme)
-    // ==========================================================================
-    const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
-
-    // Retrieve saved theme preference, or fallback to system configuration
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-
-    if (savedTheme === 'light' || (!savedTheme && systemPrefersLight)) {
-        body.classList.add('light-theme');
-        body.classList.remove('dark-theme');
-    } else {
-        body.classList.add('dark-theme');
-        body.classList.remove('light-theme');
-    }
-
-    themeToggleBtn.addEventListener('click', () => {
-        if (body.classList.contains('light-theme')) {
-            body.classList.remove('light-theme');
-            body.classList.add('dark-theme');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            body.classList.remove('dark-theme');
-            body.classList.add('light-theme');
-            localStorage.setItem('theme', 'light');
-        }
-    });
 
     // ==========================================================================
     // Mobile Navigation Drawer Toggle
@@ -38,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileMenuToggle && navLinksContainer) {
         mobileMenuToggle.addEventListener('click', () => {
-            const isOpen = navLinksContainer.classList.toggle('mobile-open');
-            mobileMenuToggle.classList.toggle('open');
+            const isOpen = navLinksContainer.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
             
             // Toggle body scroll locking when mobile menu is active
             if (isOpen) {
@@ -52,52 +24,46 @@ document.addEventListener('DOMContentLoaded', () => {
         // Close drawer when any nav link is selected
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                navLinksContainer.classList.remove('mobile-open');
-                mobileMenuToggle.classList.remove('open');
+                navLinksContainer.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
                 body.style.overflow = '';
             });
         });
     }
 
     // ==========================================================================
-    // Header Scroll State
+    // Header Scroll & Section-Aware Transparency Coloring
     // ==========================================================================
     const header = document.getElementById('header');
-    const handleScrollHeader = () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    };
-    window.addEventListener('scroll', handleScrollHeader);
-    handleScrollHeader(); // Run on init in case user loaded partially scrolled
+    const sections = document.querySelectorAll('section');
 
-    // ==========================================================================
-    // Intersection Observer for Content Scroll Reveals
-    // ==========================================================================
-    const revealElements = document.querySelectorAll('.scroll-reveal');
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
-                // Stop observing once revealed to avoid re-triggering animations
-                observer.unobserve(entry.target);
+    const handleHeaderTheme = () => {
+        let currentSection = null;
+        
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            // Check if section encompasses the header's sticky area (top 48px)
+            if (rect.top <= 48 && rect.bottom >= 48) {
+                currentSection = section;
             }
         });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px' // Trigger slightly before element is centered
-    });
 
-    revealElements.forEach(element => {
-        revealObserver.observe(element);
-    });
+        if (currentSection) {
+            if (currentSection.classList.contains('dark-scene')) {
+                header.classList.add('dark-nav');
+            } else {
+                header.classList.remove('dark-nav');
+            }
+        }
+    };
+    
+    window.addEventListener('scroll', handleHeaderTheme);
+    window.addEventListener('resize', handleHeaderTheme);
+    handleHeaderTheme(); // Run initially
 
     // ==========================================================================
     // Active Link Tracking (Scroll Spy)
     // ==========================================================================
-    const sections = document.querySelectorAll('section');
     const spyObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -114,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, {
         threshold: 0.25, // Active when at least 25% of section is visible
-        rootMargin: '-80px 0px -25% 0px' // Adjust for sticky header height
+        rootMargin: '-48px 0px -25% 0px' // Offset by sticky header height
     });
 
     sections.forEach(section => {
@@ -139,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const cardCategories = card.getAttribute('data-categories').split(' ');
 
                 if (filterValue === 'all' || cardCategories.includes(filterValue)) {
-                    card.classList.remove('hide');
+                    card.classList.remove('filtered-out');
                     // Small delay to trigger fade animation smoothly
                     setTimeout(() => {
                         card.style.opacity = '1';
@@ -150,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     card.style.transform = 'scale(0.9)';
                     // Match CSS transition length before hiding from layout
                     setTimeout(() => {
-                        card.classList.add('hide');
+                        card.classList.add('filtered-out');
                     }, 400);
                 }
             });
@@ -158,14 +124,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================================================
-    // Contact Form Interception & Mock Validation/Submit
+    // Contact Form Submission (FormSubmit API integration)
     // ==========================================================================
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
-    const submitBtn = contactForm.querySelector('.btn-submit');
-    const submitBtnSpan = submitBtn.querySelector('span');
+    const submitBtn = contactForm ? contactForm.querySelector('.btn-submit') : null;
 
-    if (contactForm) {
+    if (contactForm && formStatus && submitBtn) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
@@ -181,11 +146,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Disable submit button and show loading state
             submitBtn.disabled = true;
-            submitBtnSpan.textContent = 'Sending...';
+            const submitBtnSpan = submitBtn.querySelector('span');
+            if (submitBtnSpan) submitBtnSpan.textContent = 'Sending...';
+            
             formStatus.className = 'form-status-msg';
             formStatus.textContent = '';
 
-            // Dispatch form data via FormSubmit AJAX API to forward to user's email
+            // Post to FormSubmit JSON endpoint
             fetch("https://formsubmit.co/ajax/shamirk2121@gmail.com", {
                 method: "POST",
                 headers: { 
@@ -212,14 +179,16 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .finally(() => {
                 submitBtn.disabled = false;
-                submitBtnSpan.textContent = 'Send Message';
+                if (submitBtnSpan) submitBtnSpan.textContent = 'Send Message';
             });
         });
     }
 
     const showStatus = (message, type) => {
-        formStatus.textContent = message;
-        formStatus.className = `form-status-msg ${type}`;
+        if (formStatus) {
+            formStatus.textContent = message;
+            formStatus.className = `form-status-msg ${type}`;
+        }
     };
 
     // ==========================================================================
