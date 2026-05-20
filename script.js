@@ -131,8 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = contactForm ? contactForm.querySelector('.btn-submit') : null;
 
     if (contactForm && formStatus && submitBtn) {
-        // TEMPORARILY DISABLED FOR ACTIVATION:
-        /*
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
@@ -154,8 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
             formStatus.className = 'form-status-msg';
             formStatus.textContent = '';
 
-            // Post to FormSubmit JSON endpoint
-            fetch("https://formsubmit.co/ajax/shamirk2121@gmail.com", {
+            // Post to Getform JSON endpoint
+            fetch("https://getform.io/f/56caa3ed-7e0a-43bc-9a0d-bc6474043f78", {
                 method: "POST",
                 headers: { 
                     "Content-Type": "application/json",
@@ -169,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(response => {
                 if (response.ok) return response.json();
-                throw new Error("FormSubmit response was not ok");
+                throw new Error("Getform response was not ok");
             })
             .then(data => {
                 showStatus('Thank you! Your message has been sent successfully.', 'success');
@@ -184,7 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (submitBtnSpan) submitBtnSpan.textContent = 'Send Message';
             });
         });
-        */
     }
 
     const showStatus = (message, type) => {
