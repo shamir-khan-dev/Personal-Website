@@ -310,6 +310,38 @@ section {
     margin-top: var(--spacing-md);
 }
 
+/* Hero High-Impact Specs Bar (Value Capture) */
+.hero-metrics-bar {
+    display: flex;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: var(--spacing-md);
+}
+
+.hero-metric-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-metric-item .metric-num {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--apple-white);
+    line-height: 1;
+}
+
+.hero-metric-item .metric-desc {
+    font-family: var(--font-text);
+    font-size: 11px;
+    color: var(--apple-neutral-gray);
+    margin-top: 6px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
 /* Button & Link Classes */
 .button-primary {
     display: inline-block;
@@ -1054,5 +1086,11 @@ section {
     
     .section-headline {
         font-size: 32px;
+    }
+
+    .hero-metrics-bar {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-lg);
     }
 }
