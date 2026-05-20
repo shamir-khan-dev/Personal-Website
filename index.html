@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Shamir Khan, Computer Science Student & Full-Stack Developer showcasing expertise in frontend and backend web development.">
+    <title>Shamir Khan | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Header / Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo" id="logo-link">
+                <span class="logo-accent">&lt;</span>Shamir<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav id="navbar" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Light/Dark Theme" class="icon-btn">
+                    <!-- Sun Icon (visible in Dark theme) -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <!-- Moon Icon (visible in Light theme) -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+                <button id="mobile-menu-toggle" aria-label="Toggle Mobile Menu" class="icon-btn mobile-only">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" y1="12" x2="20" y2="12" class="line-1"></line>
+                        <line x1="4" y1="6" x2="20" y2="6" class="line-2"></line>
+                        <line x1="4" y1="18" x2="20" y2="18" class="line-3"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-tagline scroll-reveal">Hi, my name is</span>
+                    <h1 class="hero-title scroll-reveal">Shamir Khan.</h1>
+                    <h2 class="hero-subtitle scroll-reveal">I build frontend & backend systems.</h2>
+                    <p class="hero-description scroll-reveal">
+                        I'm a Computer Science student at <strong>Wilfrid Laurier University</strong> and a Full-Stack Developer specializing in architecting progressive web apps, intelligence-driven dispatch engines, and robust systems.
+                    </p>
+                    <div class="hero-cta scroll-reveal">
+                        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                        <a href="assets/Shamir_Khan_SER.pdf" download class="btn btn-secondary" id="resume-download-btn">
+                            <span>Download Resume</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hero-socials scroll-reveal">
+                        <a href="https://github.com/shamir-khan-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/shamir-khan-40698123b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:shamirk2121@gmail.com" aria-label="Email Address">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        </a>
+                        <a href="tel:6476066063" aria-label="Phone Number">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-graphic scroll-reveal">
+                    <div class="image-glow-container">
+                        <img src="assets/hero_tech_graphic.png" alt="Abstract glowing digital network visualization" class="hero-image">
+                        <div class="glow-underlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text scroll-reveal">
+                        <p>
+                            I am a Computer Science student at <strong>Wilfrid Laurier University</strong>, expected to graduate in April 2028. I specialize in full-stack software development with a passion for architecting systems that blend core computer science concepts with modern AI integrations.
+                        </p>
+                        <p>
+                            Over my academic and hackathon experience, I have led developer teams, designed smart matchmaking algorithms, and optimized cloud data layers to build high-performance products. I am highly motivated to solve complex problems and create user experiences that feel smooth and responsive.
+                        </p>
+                        <div class="education-card">
+                            <div class="edu-header">
+                                <div class="edu-title-group">
+                                    <h3>Bachelor of Science in Computer Science</h3>
+                                    <span class="edu-university">Wilfrid Laurier University</span>
+                                </div>
+                                <span class="edu-date">April 2028</span>
+                            </div>
+                            <p class="edu-location">Waterloo, ON</p>
+                            <div class="edu-details">
+                                <p><strong>Core CS:</strong> Data Structures, Object-Oriented Programming (OOP), Discrete Mathematics, Algorithms, Computer Architecture, Digital Electronics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-quick-stats scroll-reveal">
+                        <div class="stat-card">
+                            <span class="stat-num">70%</span>
+                            <span class="stat-label">Reduction in Client Acquisition Time on InstantService</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">4+</span>
+                            <span class="stat-label">Developers Managed as Team Lead at ConHacks</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">1k+</span>
+                            <span class="stat-label">Hack the North Attendees Managed Logistically</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">Work & Leadership Experience</h2>
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-title-group">
+                                    <h3>Full-Stack Developer | Team Lead</h3>
+                                    <span class="timeline-org">ConHacks</span>
+                                </div>
+                                <span class="timeline-date">April 2026</span>
+                            </div>
+                            <span class="timeline-location">Waterloo, ON</span>
+                            <ul class="timeline-bullets">
+                                <li>Led a team of 4 developers to architect <strong>InstantService</strong>, an AI-driven PWA that reduced client service-acquisition time by <strong>70%</strong> by automating natural language request classification and dispatch.</li>
+                                <li>Engineered a multi-weighted scoring algorithm using <strong>FastAPI</strong> and <strong>Snowflake</strong> to optimize contractor matching, resulting in a <strong>40% increase</strong> in job volume and instant, under 3-minute service confirmations.</li>
+                                <li>Architected the backend infrastructure for tier-based pricing and verification, ensuring a high-trust environment that validates contractors via license and insurance certificates.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-title-group">
+                                    <h3>Logistics Crew</h3>
+                                    <span class="timeline-org">Hack the North</span>
+                                </div>
+                                <span class="timeline-date">Sept 2021 – Sept 2022</span>
+                            </div>
+                            <span class="timeline-location">Waterloo, ON</span>
+                            <ul class="timeline-bullets">
+                                <li>Facilitated a seamless 36-hour event experience for <strong>1,000+ global students</strong> by managing on-site logistics and wayfinding operations for Canada's largest hackathon.</li>
+                                <li>Orchestrated on-schedule registration and technical demos to support <strong>827 attendees</strong> across <strong>222 projects</strong>.</li>
+                                <li>Ensured zero major schedule disruptions by streamlining equipment layout and resolving bottlenecks rapidly for operations backed by major corporate sponsors.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">Featured Projects</h2>
+                
+                <!-- Project Filters -->
+                <div class="project-filters scroll-reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ai">AI & Data</button>
+                    <button class="filter-btn" data-filter="full-stack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: InstantService -->
+                    <div class="project-card scroll-reveal" data-categories="ai full-stack">
+                        <div class="project-card-inner">
+                            <div class="project-badge">Featured Project</div>
+                            <div class="project-header">
+                                <div class="project-icon-folder">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/shamir-khan-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">InstantService</h3>
+                            <span class="project-subtitle">AI Emergency Dispatch PWA</span>
+                            <p class="project-description">
+                                A mobile-first Progressive Web App (PWA) and AI dispatch engine that reduces client service-acquisition time by 70%. It features automated request classification, high-trust verification for contractors, and low-latency voice confirmations.
+                            </p>
+                            <ul class="project-bullets-mini">
+                                <li>Classifies natural language requests with Gemini 1.5 Pro</li>
+                                <li>Validates contractor license/insurance certificates</li>
+                                <li>Immediate verbal confirmation using ElevenLabs Neural Speech</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span>Next.js</span>
+                                <span>FastAPI</span>
+                                <span>Snowflake</span>
+                                <span>Gemini 1.5 Pro</span>
+                                <span>ElevenLabs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Subscription Management System -->
+                    <div class="project-card scroll-reveal" data-categories="full-stack">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <div class="project-icon-folder">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/shamir-khan-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Subscription Tracker</h3>
+                            <span class="project-subtitle">Management & Expiry System</span>
+                            <p class="project-description">
+                                A full-stack subscription tracking application with React frontend and Express/MongoDB backend. Implements security rate-limiting and JWT-based authentication, alongside serverless notification workflows.
+                            </p>
+                            <ul class="project-bullets-mini">
+                                <li>JWT auth & data schemas using Zod validation</li>
+                                <li>Mitigated malicious traffic using Arcjet security</li>
+                                <li>Automated lifecycle notifications via Upstash Workflow</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>Arcjet</span>
+                                <span>Upstash</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: WLU MSA Website -->
+                    <div class="project-card scroll-reveal" data-categories="web">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <div class="project-icon-folder">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="live-link" aria-label="External Live Website">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">MSA Website</h3>
+                            <span class="project-subtitle">WLU Community Platform</span>
+                            <p class="project-description">
+                                Consultation and design of a highly accessible community site for WLU MSA. Added validation structures for prayer timings, local directories, interactive forms, and directly assisted in digital fundraising campaigns.
+                            </p>
+                            <ul class="project-bullets-mini">
+                                <li>Consulted on UI/UX product design for 250+ members</li>
+                                <li>Halal directories & event registration flow structures</li>
+                                <li>Supported operations that generated $50K+ in fundraising</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span>Next.js</span>
+                                <span>TypeScript</span>
+                                <span>Payload CMS</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">Technical Skills</h2>
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category scroll-reveal">
+                        <h3>Languages</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag" data-level="high">Python</span>
+                            <span class="skill-tag" data-level="high">JavaScript</span>
+                            <span class="skill-tag" data-level="high">TypeScript</span>
+                            <span class="skill-tag" data-level="medium">Java</span>
+                            <span class="skill-tag" data-level="medium">C</span>
+                            <span class="skill-tag" data-level="high">HTML / CSS</span>
+                            <span class="skill-tag" data-level="high">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Tools -->
+                    <div class="skills-category scroll-reveal">
+                        <h3>Frameworks & Tools</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag" data-level="high">Next.js</span>
+                            <span class="skill-tag" data-level="high">React.js</span>
+                            <span class="skill-tag" data-level="high">FastAPI</span>
+                            <span class="skill-tag" data-level="medium">Node.js / Express</span>
+                            <span class="skill-tag" data-level="medium">Docker</span>
+                            <span class="skill-tag" data-level="high">Git / GitHub</span>
+                            <span class="skill-tag" data-level="medium">DigitalOcean</span>
+                            <span class="skill-tag" data-level="medium">Arcjet</span>
+                            <span class="skill-tag" data-level="high">Upstash</span>
+                        </div>
+                    </div>
+
+                    <!-- AI & Data -->
+                    <div class="skills-category scroll-reveal">
+                        <h3>AI & Data</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag" data-level="high">Gemini 1.5 Pro</span>
+                            <span class="skill-tag" data-level="medium">ElevenLabs Speech</span>
+                            <span class="skill-tag" data-level="high">Snowflake</span>
+                            <span class="skill-tag" data-level="high">MongoDB</span>
+                            <span class="skill-tag" data-level="high">Generative AI</span>
+                            <span class="skill-tag" data-level="medium">Data Warehousing</span>
+                        </div>
+                    </div>
+
+                    <!-- Concepts -->
+                    <div class="skills-category scroll-reveal">
+                        <h3>Concepts</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag" data-level="high">System Architecture</span>
+                            <span class="skill-tag" data-level="high">REST APIs</span>
+                            <span class="skill-tag" data-level="high">OOP</span>
+                            <span class="skill-tag" data-level="high">Data Structures</span>
+                            <span class="skill-tag" data-level="high">Algorithms</span>
+                            <span class="skill-tag" data-level="medium">Automated Workflows</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container contact-container">
+                <div class="contact-info scroll-reveal">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-desc">
+                        I'm currently seeking software development internships and collaboration opportunities. If you'd like to work together, discuss a project, or just say hello, feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:shamirk2121@gmail.com" class="contact-link">shamirk2121@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:6476066063" class="contact-link">(647)-606-6063</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-text">Waterloo, ON, Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container scroll-reveal" id="form-container">
+                    <form id="contact-form" action="https://formsubmit.co/shamirk2121@gmail.com" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your Message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                    <div id="form-status" class="form-status-msg" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Shamir Khan. Built with HTML, CSS, and JS.</p>
+            <div class="footer-links">
+                <a href="https://github.com/shamir-khan-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/shamir-khan-40698123b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="#hero">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
