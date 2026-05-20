@@ -131,6 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = contactForm ? contactForm.querySelector('.btn-submit') : null;
 
     if (contactForm && formStatus && submitBtn) {
+        // TEMPORARILY DISABLED FOR ACTIVATION:
+        /*
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
@@ -182,6 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (submitBtnSpan) submitBtnSpan.textContent = 'Send Message';
             });
         });
+        */
     }
 
     const showStatus = (message, type) => {
