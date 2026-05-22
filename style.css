@@ -527,7 +527,8 @@ section {
     background-color: var(--apple-gray-bg);
     border-radius: 18px; /* card geometry */
     overflow: hidden;
-    height: 380px;
+    min-height: 380px;
+    height: auto;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--apple-border-soft);
