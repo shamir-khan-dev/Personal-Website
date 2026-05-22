@@ -530,9 +530,9 @@ section {
     height: 380px;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.02);
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.01);
-    transition: transform 0.4s var(--apple-ease), box-shadow 0.4s;
+    border: 1px solid var(--apple-border-soft);
+    box-shadow: none;
+    transition: transform 0.4s var(--apple-ease), border-color 0.4s var(--apple-ease);
     opacity: 1;
 }
 
@@ -550,8 +550,8 @@ section {
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.06);
+    transform: translateY(-4px);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .card-inner {
@@ -952,6 +952,24 @@ section {
 .footer-copyright {
     font-family: var(--font-text);
     font-size: 12px;
+}
+
+/* ==========================================================================
+   Reveal on Scroll Micro-Interactions
+   ========================================================================== */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s var(--apple-ease), transform 0.7s var(--apple-ease);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay {
+    transition-delay: 0.12s;
 }
 
 /* ==========================================================================
