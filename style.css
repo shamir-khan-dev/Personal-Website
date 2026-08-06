@@ -594,28 +594,28 @@ section {
 .card-bullets {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 4px 0 0 0;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 5px;
 }
 
 .card-bullets li {
     font-family: var(--font-text);
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.45;
     color: var(--apple-neutral-gray);
-    padding-left: 18px;
+    padding-left: 16px;
     position: relative;
 }
 
 .card-bullets li::before {
-    content: '→';
+    content: '–';
     position: absolute;
     left: 0;
     color: var(--apple-blue);
-    font-size: 12px;
-    top: 2px;
+    font-size: 13px;
+    top: 0;
     font-weight: 600;
 }
 
