@@ -738,6 +738,40 @@ section {
     margin-bottom: var(--spacing-sm);
 }
 
+/* Experience section bullet lists */
+.row-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.row-bullets li {
+    font-family: var(--font-text);
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--apple-neutral-gray);
+    padding-left: 18px;
+    position: relative;
+}
+
+.row-bullets li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--apple-blue);
+    font-weight: 600;
+    top: 0;
+}
+
+.row-bullets li strong {
+    color: var(--apple-dark-text);
+    font-weight: 600;
+}
+
+
 /* Inner tech tags */
 .row-tech-chips {
     display: flex;
