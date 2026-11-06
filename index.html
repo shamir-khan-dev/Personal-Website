@@ -73,17 +73,146 @@
                         </div>
                         <div class="hero-metric-item">
                             <span class="metric-num">100%</span>
-                            <span class="metric-desc">AI Tie-Out ($0.00 Drift)</span>
+                            <span class="metric-desc">Zero-Drift Tie-Out</span>
+                        </div>
+                        <div class="hero-metric-item">
+                            <span class="metric-num">250+</span>
+                            <span class="metric-desc">Active Campus Users</span>
                         </div>
                         <div class="hero-metric-item">
                             <span class="metric-num">$50K+</span>
-                            <span class="metric-desc">Charitable Raised</span>
+                            <span class="metric-desc">Processed / Raised</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="hero-graphic-container reveal reveal-delay">
-                    <img src="assets/hero_tech_graphic.png" alt="Futuristic technical wireframe background illustrating engineering logic" class="hero-graphic">
+                <div class="hero-telemetry-container reveal reveal-delay">
+                    <!-- Live Systems & Recruiter Telemetry Command Center -->
+                    <div class="telemetry-card">
+                        <!-- Command Center Header -->
+                        <div class="telemetry-header">
+                            <div class="telemetry-badge-live">
+                                <span class="telemetry-beacon"></span>
+                                <span class="telemetry-live-title">LIVE ARCHITECTURE</span>
+                            </div>
+                            <div class="telemetry-meta">
+                                <span class="telemetry-region">PROD CLUSTER · 0.05ms</span>
+                            </div>
+                        </div>
+
+                        <!-- Microservice Telemetry Rows -->
+                        <div class="telemetry-services">
+                            <!-- Service 1: NexusQueue -->
+                            <a href="#projects" class="telemetry-service-row">
+                                <div class="service-row-main">
+                                    <div class="service-identity">
+                                        <div class="service-name-group">
+                                            <span class="service-name">NexusQueue</span>
+                                            <span class="service-role">Distributed Queue</span>
+                                        </div>
+                                        <div class="service-tags">
+                                            <span class="tag-tech ts">TypeScript</span>
+                                            <span class="tag-tech redis">Redis</span>
+                                            <span class="tag-tech bullmq">BullMQ</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-metric-badge">
+                                        <span class="metric-highlight">119,000</span>
+                                        <span class="metric-sub">jobs / sec</span>
+                                    </div>
+                                </div>
+                                <div class="service-row-sub">
+                                    <span class="sub-stat"><span class="dot-live green"></span> Zero Data Loss</span>
+                                    <span class="sub-stat">43 Vitest Suite 100%</span>
+                                    <span class="sub-stat highlight">P99: 1.2ms</span>
+                                </div>
+                            </a>
+
+                            <!-- Service 2: LedgerMesh -->
+                            <a href="#projects" class="telemetry-service-row">
+                                <div class="service-row-main">
+                                    <div class="service-identity">
+                                        <div class="service-name-group">
+                                            <span class="service-name">LedgerMesh</span>
+                                            <span class="service-role">ACID Concurrency</span>
+                                        </div>
+                                        <div class="service-tags">
+                                            <span class="tag-tech py">Python 3.12</span>
+                                            <span class="tag-tech pg">PostgreSQL</span>
+                                            <span class="tag-tech occ">OCC Engine</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-metric-badge">
+                                        <span class="metric-highlight">10,790</span>
+                                        <span class="metric-sub">tx / sec</span>
+                                    </div>
+                                </div>
+                                <div class="service-row-sub">
+                                    <span class="sub-stat"><span class="dot-live cyan"></span> 0.05ms Isolation</span>
+                                    <span class="sub-stat">100% Tie-Out ($0.00 Drift)</span>
+                                    <span class="sub-stat highlight">Serializable</span>
+                                </div>
+                            </a>
+
+                            <!-- Service 3: CloudGuard -->
+                            <a href="#projects" class="telemetry-service-row">
+                                <div class="service-row-main">
+                                    <div class="service-identity">
+                                        <div class="service-name-group">
+                                            <span class="service-name">CloudGuard</span>
+                                            <span class="service-role">eBPF Security Agent</span>
+                                        </div>
+                                        <div class="service-tags">
+                                            <span class="tag-tech cpp">C++20</span>
+                                            <span class="tag-tech kafka">Apache Kafka</span>
+                                            <span class="tag-tech linux">Linux Kernel</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-metric-badge">
+                                        <span class="metric-highlight">&lt; 10μs</span>
+                                        <span class="metric-sub">telemetry latency</span>
+                                    </div>
+                                </div>
+                                <div class="service-row-sub">
+                                    <span class="sub-stat"><span class="dot-live purple"></span> Real-time Streaming</span>
+                                    <span class="sub-stat">Zero Dropped Syscalls</span>
+                                    <span class="sub-stat highlight">Next.js UI</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Real-World Impact Strip -->
+                        <div class="telemetry-impact-strip">
+                            <div class="impact-item">
+                                <span class="impact-num">250+</span>
+                                <span class="impact-label">Production Users</span>
+                            </div>
+                            <div class="impact-sep"></div>
+                            <div class="impact-item">
+                                <span class="impact-num">$50K+</span>
+                                <span class="impact-label">Funds Processed</span>
+                            </div>
+                            <div class="impact-sep"></div>
+                            <div class="impact-item">
+                                <span class="impact-num">$0</span>
+                                <span class="impact-label">Client Cloud Cost</span>
+                            </div>
+                        </div>
+
+                        <!-- Recruiter Fast-Scan Tech Cloud -->
+                        <div class="telemetry-scan-cloud">
+                            <span class="scan-label">CORE STACK:</span>
+                            <span class="scan-chip key-skill">Python</span>
+                            <span class="scan-chip key-skill">TypeScript</span>
+                            <span class="scan-chip key-skill">C++</span>
+                            <span class="scan-chip">PostgreSQL</span>
+                            <span class="scan-chip">Kafka</span>
+                            <span class="scan-chip">Redis</span>
+                            <span class="scan-chip">Docker</span>
+                            <span class="scan-chip">FastAPI</span>
+                            <span class="scan-chip">Next.js</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -481,11 +610,34 @@
                     </div>
 
                     <!-- Project Card 7: Subscription Management System -->
-                    <div class="project-card reveal" data-categories="fullstack">
+                    <div class="project-card reveal" data-categories="fullstack" style="border: 1px solid rgba(139, 92, 246, 0.28);">
+                        <div class="card-preview-frame">
+                            <div class="preview-browser-header">
+                                <div class="browser-traffic-lights">
+                                    <span class="traffic-light close"></span>
+                                    <span class="traffic-light minimize"></span>
+                                    <span class="traffic-light expand"></span>
+                                </div>
+                                <div class="browser-address-bar">
+                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                    <span class="url-text">subscription-app-lime.vercel.app</span>
+                                </div>
+                                <div class="preview-live-indicator">
+                                    <span class="pulse-dot"></span> LIVE APP
+                                </div>
+                            </div>
+                            <div class="preview-image-wrapper">
+                                <img src="assets/subscription_preview.png" alt="Subscription Tracker Web App Screenshot" class="project-preview-img" loading="lazy">
+                                <div class="preview-hover-overlay">
+                                    <a href="https://subscription-app-lime.vercel.app/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Live App ↗</a>
+                                    <a href="https://github.com/shamir-khan-dev/Subscription-management-system" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-inner">
                             <div class="card-body">
-                                <span class="card-eyebrow">REACT · NODE.JS · EXPRESS · MONGO · ARCJET</span>
-                                <h3 class="card-title">Subscription Tracker</h3>
+                                <span class="card-eyebrow">REACT · NODE.JS · EXPRESS · MONGODB ATLAS · ARCJET · UPSTASH</span>
+                                <h3 class="card-title">Subscription Tracker <span style="font-size:0.5em; font-weight:500; color:#8b5cf6; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">FINTECH SAAS</span></h3>
                                 
                                 <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
                                     <div class="spec-metric">
@@ -496,57 +648,114 @@
                                         <span class="metric-value">Arcjet</span>
                                         <span class="metric-label">Security Shield</span>
                                     </div>
+                                    <div class="spec-metric">
+                                        <span class="metric-value">Upstash</span>
+                                        <span class="metric-label">Automated Workflows</span>
+                                    </div>
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>Full-stack MVC REST API with <strong>Node.js + Express</strong> and <strong>MongoDB Atlas</strong> for persistent storage</li>
-                                    <li><strong>JWT auth</strong> + Zod schema validation for secure, strongly-typed API access</li>
-                                    <li>Automated subscription lifecycle emails via <strong>Upstash Workflow</strong> + Nodemailer</li>
-                                    <li><strong>Arcjet</strong> security layer for rate-limiting and bot protection</li>
+                                    <li>Full-stack MVC architecture built with <strong>Node.js, Express</strong>, and <strong>MongoDB Atlas</strong> for recurring subscription management</li>
+                                    <li>Implemented <strong>JWT token authentication</strong> and <strong>Zod schema validation</strong> ensuring strict type-safe API boundaries</li>
+                                    <li>Integrated <strong>Arcjet security shield</strong> for distributed rate-limiting, IP profiling, and automated bot mitigation</li>
+                                    <li>Orchestrated event-driven renewal emails and lifecycle reminders using <strong>Upstash Workflow</strong> and Nodemailer</li>
                                 </ul>
                             </div>
-                            <div class="card-action">
-                                <a href="https://subscription-app-lime.vercel.app/" target="_blank" rel="noopener" class="card-text-link">Explore Site <span class="arrow">→</span></a>
+                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                                <a href="https://subscription-app-lime.vercel.app/" target="_blank" rel="noopener" class="card-text-link" style="color: #8b5cf6; font-weight: 600;">Live App <span class="arrow">→</span></a>
+                                <a href="https://github.com/shamir-khan-dev/Subscription-management-system" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project Card 8: Movie Review Website -->
-                    <div class="project-card reveal" data-categories="fullstack">
+                    <div class="project-card reveal" data-categories="fullstack web" style="border: 1px solid rgba(14, 165, 233, 0.28);">
+                        <div class="card-preview-frame">
+                            <div class="preview-browser-header">
+                                <div class="browser-traffic-lights">
+                                    <span class="traffic-light close"></span>
+                                    <span class="traffic-light minimize"></span>
+                                    <span class="traffic-light expand"></span>
+                                </div>
+                                <div class="browser-address-bar">
+                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                    <span class="url-text">shamir-khan-dev.github.io/movie-reviews-website</span>
+                                </div>
+                                <div class="preview-live-indicator">
+                                    <span class="pulse-dot"></span> LIVE SITE
+                                </div>
+                            </div>
+                            <div class="preview-image-wrapper">
+                                <img src="assets/moviereview_preview.png" alt="Movie Review Web Platform Screenshot" class="project-preview-img" loading="lazy">
+                                <div class="preview-hover-overlay">
+                                    <a href="https://shamir-khan-dev.github.io/movie-reviews-website/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Live Site ↗</a>
+                                    <a href="https://github.com/shamir-khan-dev/movie-reviews-website" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-inner">
                             <div class="card-body">
-                                <span class="card-eyebrow">HTML5 · CSS3 · JAVASCRIPT · NODE.JS · EXPRESS · MONGODB</span>
-                                <h3 class="card-title">Movie Review Website</h3>
+                                <span class="card-eyebrow">JAVASCRIPT · NODE.JS · EXPRESS · MONGODB ATLAS · TMDB API</span>
+                                <h3 class="card-title">Movie Review Platform <span style="font-size:0.5em; font-weight:500; color:#0ea5e9; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">FULL-STACK WEB</span></h3>
                                 
                                 <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
                                     <div class="spec-metric">
                                         <span class="metric-value">TMDB API</span>
-                                        <span class="metric-label">Discovery</span>
+                                        <span class="metric-label">Live Discovery</span>
                                     </div>
                                     <div class="spec-metric">
                                         <span class="metric-value">MongoDB</span>
-                                        <span class="metric-label">Cloud Storage</span>
+                                        <span class="metric-label">Atlas Cloud DB</span>
+                                    </div>
+                                    <div class="spec-metric">
+                                        <span class="metric-value">REST API</span>
+                                        <span class="metric-label">Express CRUD</span>
                                     </div>
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>Movie discovery and search powered by the <strong>TMDB API</strong></li>
-                                    <li>Custom <strong>Express REST API</strong> for creating, reading, and deleting user reviews</li>
-                                    <li><strong>MongoDB Atlas</strong> for cloud-persistent review storage</li>
+                                    <li>Interactive film discovery platform streaming live cinema releases, ratings, and trailers via <strong>TMDB API</strong></li>
+                                    <li>Architected custom <strong>Express REST API</strong> endpoints for real-time creation, editing, and deletion of reviews</li>
+                                    <li>Engineered cloud-native document schema in <strong>MongoDB Atlas</strong> with indexed query optimization</li>
+                                    <li>Dynamic frontend with asynchronous search debounce, detailed modal views, and interactive star ratings</li>
                                 </ul>
                             </div>
-                            <div class="card-action">
-                                <a href="https://shamir-khan-dev.github.io/movie-reviews-website/" target="_blank" rel="noopener" class="card-text-link">Explore Site <span class="arrow">→</span></a>
+                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                                <a href="https://shamir-khan-dev.github.io/movie-reviews-website/" target="_blank" rel="noopener" class="card-text-link" style="color: #0ea5e9; font-weight: 600;">Live Site <span class="arrow">→</span></a>
+                                <a href="https://github.com/shamir-khan-dev/movie-reviews-website" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project Card 9: Dragon Repeller RPG -->
-                    <div class="project-card reveal" data-categories="web">
+                    <div class="project-card reveal" data-categories="web" style="border: 1px solid rgba(239, 68, 68, 0.28);">
+                        <div class="card-preview-frame">
+                            <div class="preview-browser-header">
+                                <div class="browser-traffic-lights">
+                                    <span class="traffic-light close"></span>
+                                    <span class="traffic-light minimize"></span>
+                                    <span class="traffic-light expand"></span>
+                                </div>
+                                <div class="browser-address-bar">
+                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                    <span class="url-text">shamir-khan-dev.github.io/Front-end-game</span>
+                                </div>
+                                <div class="preview-live-indicator">
+                                    <span class="pulse-dot"></span> LIVE GAME
+                                </div>
+                            </div>
+                            <div class="preview-image-wrapper">
+                                <img src="assets/dragonrpg_preview.png" alt="Dragon Repeller RPG Game Screenshot" class="project-preview-img" loading="lazy">
+                                <div class="preview-hover-overlay">
+                                    <a href="https://shamir-khan-dev.github.io/Front-end-game/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Play Game ↗</a>
+                                    <a href="https://github.com/shamir-khan-dev/Front-end-game" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-inner">
                             <div class="card-body">
-                                <span class="card-eyebrow">HTML5 · CSS3 · VANILLA JAVASCRIPT</span>
-                                <h3 class="card-title">Dragon Repeller RPG</h3>
+                                <span class="card-eyebrow">HTML5 · CSS3 · VANILLA JAVASCRIPT · ZERO DEPENDENCIES</span>
+                                <h3 class="card-title">Dragon Repeller RPG <span style="font-size:0.5em; font-weight:500; color:#ef4444; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">GAME ENGINE</span></h3>
                                 
                                 <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
                                     <div class="spec-metric">
@@ -555,18 +764,24 @@
                                     </div>
                                     <div class="spec-metric">
                                         <span class="metric-value">Pure JS</span>
-                                        <span class="metric-label">Vanilla Logic</span>
+                                        <span class="metric-label">Zero Dependencies</span>
+                                    </div>
+                                    <div class="spec-metric">
+                                        <span class="metric-value">60 FPS</span>
+                                        <span class="metric-label">DOM Performance</span>
                                     </div>
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>State-driven browser RPG built entirely in <strong>pure Vanilla JavaScript</strong> — zero dependencies</li>
-                                    <li>Explore, shop, and battle monsters with full inventory and tactical combat systems</li>
-                                    <li>Demonstrates deep mastery of <strong>DOM manipulation</strong> and client-side game state management</li>
+                                    <li>Deterministic state-driven RPG built entirely in <strong>pure Vanilla JavaScript</strong> without external libraries</li>
+                                    <li>Designed combat arithmetic calculating hit probabilities, dynamic weapon degradation, and XP leveling curves</li>
+                                    <li>Demonstrates deep mastery of <strong>DOM tree manipulation</strong>, client-side memory safety, and event delegation</li>
+                                    <li>Immersive responsive UI featuring dynamic game log feeds, inventory management, and easter-egg minigames</li>
                                 </ul>
                             </div>
-                            <div class="card-action">
-                                <a href="https://shamir-khan-dev.github.io/Front-end-game/" target="_blank" rel="noopener" class="card-text-link">Play Game <span class="arrow">→</span></a>
+                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                                <a href="https://shamir-khan-dev.github.io/Front-end-game/" target="_blank" rel="noopener" class="card-text-link" style="color: #ef4444; font-weight: 600;">Play Game <span class="arrow">→</span></a>
+                                <a href="https://github.com/shamir-khan-dev/Front-end-game" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
                             </div>
                         </div>
                     </div>
