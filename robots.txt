@@ -1,0 +1,5 @@
+# robots.txt for Shamir Khan Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://shamir-khan-dev.github.io/Personal-Website/sitemap.xml
