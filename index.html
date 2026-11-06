@@ -7,7 +7,7 @@
     
     <!-- Primary Search Engine Optimization (SEO) -->
     <meta name="title" content="Shamir Khan | Software Engineer | Wilfrid Laurier University">
-    <meta name="description" content="Official engineering portfolio of Shamir Khan, Computer Science student at Wilfrid Laurier University specializing in distributed queue engines, high-concurrency ACID ledgers, and real-time Kafka event streaming.">
+    <meta name="description" content="Official engineering portfolio of Shamir Khan, Computer Science student at Wilfrid Laurier University specializing in distributed queue engines, high concurrency ACID ledgers, and real time Kafka event streaming.">
     <meta name="keywords" content="Shamir Khan, Shamir Khan Laurier, Shamir Khan Wilfrid Laurier, Shamir Khan Software Engineer, Computer Science, Distributed Systems, Python, TypeScript, C++, NexusQueue, LedgerMesh, CloudGuard">
     <meta name="author" content="Shamir Khan">
     <meta name="robots" content="index, follow">
@@ -16,7 +16,7 @@
     <!-- Open Graph / Facebook / LinkedIn / WhatsApp Preview Cards -->
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Shamir Khan | Software Engineer">
-    <meta property="og:description" content="High-throughput distributed systems & autonomous AI. 119k jobs/sec queue engine, 10.8k tx/sec ACID ledger, and real-time Kafka streaming.">
+    <meta property="og:description" content="High-throughput distributed systems & autonomous AI. 119k jobs/sec queue engine, 10.8k tx/sec ACID ledger, and real time Kafka streaming.">
     <meta property="og:url" content="https://shamir-khan-dev.github.io/Personal-Website/">
     <meta property="og:site_name" content="Shamir Khan Engineering Portfolio">
     <meta property="og:image" content="https://shamir-khan-dev.github.io/Personal-Website/assets/hero_tech_graphic.png">
@@ -110,7 +110,7 @@
                     <h1 class="hero-headline">Software Engineer.</h1>
                     <h2 class="hero-subheadline">Shamir Khan. High-throughput distributed systems &amp; autonomous AI.</h2>
                     <p class="hero-summary">
-                        Computer Science student specializing in distributed queue engines, high-concurrency financial ledgers, and real-time Kafka event streaming. Proven track record delivering verified client production code.
+                        Computer Science student specializing in distributed queue engines, high concurrency financial ledgers, and real time Kafka event streaming. Proven track record delivering verified client production code.
                     </p>
                     
                     <div class="hero-actions">
@@ -227,7 +227,7 @@
                                         </div>
                                     </div>
                                     <div class="service-metric-badge">
-                                        <span class="metric-highlight">&lt; 10μs</span>
+                                        <span class="metric-highlight">&lt; 10 microseconds</span>
                                         <span class="metric-sub">telemetry latency</span>
                                     </div>
                                 </div>
@@ -317,7 +317,7 @@
 
                 <!-- Projects Card Grid -->
                 <div class="projects-grid">
-                    <!-- Project Card 1: NexusQueue — DISTRIBUTED SYSTEMS FEATURED -->
+                    <!-- Project Card 1: NexusQueue   DISTRIBUTED SYSTEMS FEATURED -->
                     <div class="project-card reveal" data-categories="backend fullstack" style="border: 1px solid rgba(56, 189, 248, 0.35); background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);">
                         <div class="card-preview-frame">
                             <div class="preview-browser-header">
@@ -363,10 +363,10 @@
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>Distributed background task queue benchmarked at <strong>119,000 jobs/sec</strong> enqueue and <strong>3,418 tasks/sec</strong> execution across 50 workers</li>
-                                    <li>Binary <strong>min-heap priority scheduler</strong> with strict FIFO timestamp tie-breaking and sub-millisecond dispatch</li>
-                                    <li>Distributed <strong>Token Bucket &amp; Sliding Window</strong> rate limiters with AWS-style Full Jitter backoff against thundering herds</li>
-                                    <li><strong>Heartbeat supervisor</strong> auto-reclaims zombie worker tasks; Kahn's topological sort orchestrates multi-stage <strong>DAG workflows</strong></li>
+                                    <li>Architected an asynchronous background task processing engine benchmarked at <strong>119,000 jobs per second</strong> to offload heavy computing and keep web applications fast</li>
+                                    <li>Built an intelligent <strong>priority scheduling queue</strong> with instant dispatch, ensuring high urgency requests always process ahead of routine tasks</li>
+                                    <li>Implemented distributed <strong>rate limiters and backoff logic</strong> to protect backend databases from sudden traffic spikes and server crashes</li>
+                                    <li>Designed an automated <strong>task supervisor</strong> that schedules dependent multi stage workflows and automatically reclaims interrupted background jobs</li>
                                 </ul>
                             </div>
                             <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
@@ -376,7 +376,7 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 2: LedgerMesh — FINANCIAL CORE FEATURED -->
+                    <!-- Project Card 2: LedgerMesh   FINANCIAL CORE FEATURED -->
                     <div class="project-card reveal" data-categories="backend fullstack" style="border: 1px solid rgba(245, 158, 11, 0.35); background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(239, 68, 68, 0.05) 100%);">
                         <div class="card-preview-frame">
                             <div class="preview-browser-header">
@@ -403,7 +403,7 @@
                         </div>
                         <div class="card-inner">
                             <div class="card-body">
-                                <span class="card-eyebrow">PYTHON 3.13 · FASTAPI · OPTIMISTIC CONCURRENCY · SHA-256 MERKLE TREES · PROMETHEUS</span>
+                                <span class="card-eyebrow">PYTHON 3.13 · FASTAPI · OPTIMISTIC CONCURRENCY · SHA256 MERKLE TREES · PROMETHEUS</span>
                                 <h3 class="card-title">LedgerMesh <span style="font-size:0.5em; font-weight:500; color:#fbbf24; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">FINANCIAL CLEARING</span></h3>
                                 
                                 <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
@@ -422,10 +422,10 @@
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>High-throughput <strong>financial clearing ledger</strong> benchmarked at <strong>10,790 tx/sec</strong> with sub-millisecond <strong>0.05ms p50 latency</strong></li>
-                                    <li>Enforces strict double-entry mathematical invariants (&Sigma; Debits = &Sigma; Credits) and account-level versioning</li>
-                                    <li><strong>Optimistic Concurrency Control (OCC)</strong> with exponential backoff &amp; full jitter eliminates race conditions without database locks</li>
-                                    <li>Cryptographic <strong>SHA-256 Merkle audit chains</strong> provide 100% tamper-evident audit trails with zero discrepancy</li>
+                                    <li>Engineered a high speed <strong>financial transaction ledger</strong> benchmarked at <strong>10,790 transactions per second</strong> with sub millisecond 0.05ms response times</li>
+                                    <li>Enforces strict <strong>double entry accounting rules</strong> where Total Debits must equal Total Credits, completely preventing double spending and balance discrepancies</li>
+                                    <li>Implemented <strong>Optimistic Concurrency Control</strong> to process high volume financial payments simultaneously without freezing or locking database tables</li>
+                                    <li>Integrated <strong>cryptographic audit verification</strong> using SHA256 proofs, providing complete transparency and a 100% financial tie out with zero dollars drift</li>
                                 </ul>
                             </div>
                             <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
@@ -435,7 +435,7 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 3: CloudGuard — FEATURED CSPM -->
+                    <!-- Project Card 3: CloudGuard   FEATURED CSPM -->
                     <div class="project-card reveal" data-categories="fullstack backend" style="border: 1px solid rgba(99,102,241,0.35); background: linear-gradient(135deg, rgba(99,102,241,0.05) 0%, rgba(168,85,247,0.05) 100%);">
                         <div class="card-preview-frame">
                             <div class="preview-browser-header">
@@ -481,10 +481,10 @@
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li><strong>C++ agent</strong> scrapes CPU/RAM via Windows APIs &amp; Kafka — publishes telemetry at 5s intervals</li>
-                                    <li><strong>Scala Spark</strong> aggregates real-time cloud costs across AWS, Azure &amp; GCP with zero data loss</li>
-                                    <li><strong>Python IsolationForest ML</strong> detects billing spikes &amp; SSH brute-force intrusions — 85% faster MTTR</li>
-                                    <li><strong>Next.js dashboard</strong> with live security dials, Kotlin alerts, and 99.9% production uptime</li>
+                                    <li>Architected a real time <strong>cloud security monitoring platform</strong> across containerized microservices connected via <strong>Apache Kafka</strong> to protect AWS, Azure, and Google Cloud</li>
+                                    <li>Built a native <strong>C++ telemetry agent</strong> tracking system memory and CPU utilization at the operating system kernel level with minimal overhead</li>
+                                    <li>Deployed an unsupervised <strong>machine learning pipeline</strong> to detect brute force cyber attacks and unauthorized billing spikes, cutting incident resolution time by 85%</li>
+                                    <li>Designed an interactive <strong>Next.js administrative dashboard</strong> with live security dials, automated threat alerts, and 99.9% continuous uptime</li>
                                 </ul>
                             </div>
                             <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
@@ -494,7 +494,7 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 4: AlphaPulse — QUANT & AI FEATURED -->
+                    <!-- Project Card 4: AlphaPulse   QUANT & AI FEATURED -->
                     <div class="project-card reveal" data-categories="fullstack backend" style="border: 1px solid rgba(16, 185, 129, 0.35); background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);">
                         <div class="card-preview-frame">
                             <div class="preview-browser-header">
@@ -540,10 +540,10 @@
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>High-throughput <strong>quantitative trading terminal</strong> computing multi-factor confluence scoring across 6 vectorized technical indicators</li>
-                                    <li>Dual-mode <strong>Computer Vision engine</strong> with <strong>OpenCV &amp; multimodal Gemini AI</strong> to parse clipboard chart screenshots (<kbd>Ctrl+V</kbd>) with zero latency</li>
-                                    <li>Automated <strong>12-month backtesting simulation</strong> &amp; institutional risk desk with dynamic ATR volatility stops (1:2.5 R:R)</li>
-                                    <li>Interactive <strong>HTML5 Canvas chart engine</strong> &amp; conversational AI TradeBot with real-time paper trading execution</li>
+                                    <li>Built a high speed <strong>quantitative financial analysis terminal</strong> in <strong>Python</strong> computing 6 technical market indicators in under 30 milliseconds</li>
+                                    <li>Engineered a dual mode <strong>visual analysis engine</strong> using <strong>OpenCV and multimodal Gemini AI</strong> to analyze uploaded stock chart screenshots with one click</li>
+                                    <li>Developed an automated <strong>historical backtesting simulation</strong> evaluating trading strategies against 12 months of live market data with built in risk controls</li>
+                                    <li>Designed an interactive <strong>chart interface</strong> with real time paper trading simulation to practice trade execution risk free</li>
                                 </ul>
                             </div>
                             <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
@@ -598,10 +598,10 @@
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>Production platform serving <strong>250+ active campus members</strong> with real-time event schedules and prayer timings</li>
-                                    <li>Architected with <strong>Next.js, React, TypeScript</strong> and Tailwind CSS, maintaining 99.9% continuous uptime</li>
-                                    <li>Engineered dynamic donation and event registration modules integrated with <strong>Payload CMS</strong> &amp; payment webhooks</li>
-                                    <li>Supported student-led initiatives that processed <strong>$50K+</strong> in charitable donations</li>
+                                    <li>Architected and deployed the official production web platform serving <strong>250+ active university members</strong> with real time event calendars and community updates</li>
+                                    <li>Built with <strong>Next.js, React, TypeScript</strong>, and Tailwind CSS, maintaining 99.9% continuous uptime</li>
+                                    <li>Engineered dynamic online donation and event registration workflows that helped student initiatives process over <strong>$50,000</strong> in charitable contributions</li>
+                                    <li>Integrated an intuitive content management system enabling non technical student executives to publish announcements and manage community programs easily</li>
                                 </ul>
                             </div>
                             <div class="card-action">
@@ -655,10 +655,10 @@
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>Mobile-first <strong>PWA</strong> powered by <strong>Gemini 1.5 Pro</strong> for AI-driven natural language contractor dispatch</li>
-                                    <li>Multi-weighted matching algorithm with <strong>FastAPI + Snowflake</strong> — under-3-minute service confirmations</li>
-                                    <li><strong>Google Maps APIs</strong> + live WebSocket feeds for optimal routing — 20% overhead reduction</li>
-                                    <li>Automated license/insurance certificate verification to establish a high-trust production environment</li>
+                                    <li>Built a mobile web application powered by <strong>Gemini 1.5 Pro</strong> to convert natural language repair requests into instant emergency contractor job orders</li>
+                                    <li>Engineered an intelligent matching algorithm using <strong>FastAPI and Snowflake</strong> connecting clients with available local professionals in under 3 minutes</li>
+                                    <li>Integrated <strong>Google Maps distance calculations</strong> to dispatch the closest technicians, reducing contractor travel overhead by 20%</li>
+                                    <li>Automated contractor license and insurance certificate verification pipelines to establish a verified, high trust customer experience</li>
                                 </ul>
                             </div>
                             <div class="card-action">
@@ -713,10 +713,10 @@
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>Full-stack MVC architecture built with <strong>Node.js, Express</strong>, and <strong>MongoDB Atlas</strong> for recurring subscription management</li>
-                                    <li>Implemented <strong>JWT token authentication</strong> and <strong>Zod schema validation</strong> ensuring strict type-safe API boundaries</li>
-                                    <li>Integrated <strong>Arcjet security shield</strong> for distributed rate-limiting, IP profiling, and automated bot mitigation</li>
-                                    <li>Orchestrated event-driven renewal emails and lifecycle reminders using <strong>Upstash Workflow</strong> and Nodemailer</li>
+                                    <li>Built a full stack web platform using <strong>Node.js, Express</strong>, and <strong>MongoDB Atlas</strong> helping users track recurring monthly subscription expenses in one dashboard</li>
+                                    <li>Implemented secure user accounts with <strong>token based authentication</strong> and strict data validation to protect private billing information</li>
+                                    <li>Integrated <strong>Arcjet security protection</strong> to shield application programming interfaces from automated bots and rate abuse</li>
+                                    <li>Configured automated email notification workflows using <strong>Upstash</strong> to alert users before upcoming subscription renewal charges hit their credit cards</li>
                                 </ul>
                             </div>
                             <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
@@ -772,10 +772,10 @@
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>Interactive film discovery platform streaming live cinema releases, ratings, and trailers via <strong>TMDB API</strong></li>
-                                    <li>Architected custom <strong>Express REST API</strong> endpoints for real-time creation, editing, and deletion of reviews</li>
-                                    <li>Engineered cloud-native document schema in <strong>MongoDB Atlas</strong> with indexed query optimization</li>
-                                    <li>Dynamic frontend with asynchronous search debounce, detailed modal views, and interactive star ratings</li>
+                                    <li>Built a cinema discovery platform connecting to the <strong>TMDB API</strong> to display live trending releases, ratings, and trailers</li>
+                                    <li>Architected custom <strong>Express REST API</strong> endpoints allowing users to easily create, edit, and manage their personal movie reviews</li>
+                                    <li>Engineered persistent cloud database storage on <strong>MongoDB Atlas</strong> with indexed queries for fast movie search results</li>
+                                    <li>Designed a responsive modern user interface featuring instant search, detailed movie overviews, and interactive rating stars</li>
                                 </ul>
                             </div>
                             <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
@@ -831,10 +831,10 @@
                                 </div>
 
                                 <ul class="card-bullets">
-                                    <li>Deterministic state-driven RPG built entirely in <strong>pure Vanilla JavaScript</strong> without external libraries</li>
-                                    <li>Designed combat arithmetic calculating hit probabilities, dynamic weapon degradation, and XP leveling curves</li>
-                                    <li>Demonstrates deep mastery of <strong>DOM tree manipulation</strong>, client-side memory safety, and event delegation</li>
-                                    <li>Immersive responsive UI featuring dynamic game log feeds, inventory management, and easter-egg minigames</li>
+                                    <li>Built an interactive retro browser adventure game entirely in <strong>pure JavaScript, HTML5, and CSS3</strong> without external third party libraries</li>
+                                    <li>Programmed core game logic calculating combat damage, experience leveling, gold rewards, and weapon inventory management</li>
+                                    <li>Demonstrates deep mastery of <strong>browser performance</strong>, direct screen updates, and responsive user event handling</li>
+                                    <li>Designed a responsive fantasy user interface featuring live battle status logs, inventory shopping, and interactive minigames</li>
                                 </ul>
                             </div>
                             <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
@@ -862,16 +862,16 @@
                             <div class="experience-row">
                                 <div class="row-header">
                                     <div class="row-title-group">
-                                        <span class="row-date">OCTOBER 2026 &mdash; PRESENT</span>
+                                        <span class="row-date">OCTOBER 2026   PRESENT</span>
                                         <h3>Software Engineer &amp; Automation Lead</h3>
                                         <h4 class="row-org">Go Fig Bookz (via Riipen Labs)</h4>
                                     </div>
                                 </div>
                                 <div class="row-body">
                                     <ul class="row-bullets">
-                                        <li>Architected an <strong>automated financial ETL pipeline</strong> in TypeScript to parse, extract, and reconcile multi-bank PDF/credit-card statements into standardized accounting CSVs</li>
-                                        <li>Engineered custom coordinate-aware stream decompressors (Flate &amp; ASCII85) and local OCR engines with <strong>strict zero-knowledge privacy</strong> and $0 external cloud cost</li>
-                                        <li>Implemented automated running-balance and mathematical validation algorithms in Vitest, achieving <strong>100% test coverage and $0.00 statement tie-out discrepancy</strong> across multi-page transaction batches</li>
+                                        <li>Architected an <strong>automated financial data pipeline</strong> in <strong>TypeScript</strong> to extract and reconcile multi bank PDF statements into standardized accounting records</li>
+                                        <li>Engineered custom document parsing engines and local text extraction with <strong>strict privacy</strong> and zero external cloud software expenses</li>
+                                        <li>Authored comprehensive automated test suites covering <strong>43 tests across 9 suites</strong>, verifying mathematical accuracy and zero discrepancies across client financial records</li>
                                     </ul>
                                     <div class="row-tech-chips">
                                         <span class="tech-chip">TypeScript</span>
@@ -894,9 +894,9 @@
                                 </div>
                                 <div class="row-body">
                                     <ul class="row-bullets">
-                                        <li>Led <strong>technical discovery and digital audits</strong> for a healthcare non-profit, analyzing user journeys and IA to eliminate critical navigation bottlenecks</li>
-                                        <li>Architected a <strong>self-guided triage workflow</strong> cutting resource discovery pathways to <strong>under 3 clicks</strong> to reduce cognitive friction</li>
-                                        <li>Authored a 30-60-90 day technical execution roadmap with <strong>$0 additional tech spend</strong> across an 11-slide client delivery brief</li>
+                                        <li>Led <strong>technical discovery and digital audits</strong> for a healthcare community healthcare non profit, analyzing user journeys and IA to eliminate critical navigation bottlenecks</li>
+                                        <li>Architected a <strong>self guided triage workflow</strong> cutting resource discovery pathways to <strong>under 3 clicks</strong> to reduce cognitive friction</li>
+                                        <li>Authored a quarterly technical execution roadmap technical execution roadmap with <strong>$0 additional tech spend</strong> across an 11 slide presentation client delivery brief</li>
                                     </ul>
                                     <div class="row-tech-chips">
                                         <span class="tech-chip">Technical Discovery</span>
@@ -911,7 +911,7 @@
                             <div class="experience-row">
                                 <div class="row-header">
                                     <div class="row-title-group">
-                                        <span class="row-date">JANUARY 2026 &mdash; PRESENT</span>
+                                        <span class="row-date">JANUARY 2026   PRESENT</span>
                                         <h3>Lead Web Developer &amp; Systems Administrator</h3>
                                         <h4 class="row-org">Muslim Students' Association (WLU MSA)</h4>
                                     </div>
@@ -919,8 +919,8 @@
                                 <div class="row-body">
                                     <ul class="row-bullets">
                                         <li>Architected and deployed production web platform serving <strong>250+ active campus members</strong> with Next.js, React, TypeScript, and Payload CMS (<a href="https://wlumsa.org/" target="_blank" rel="noopener" style="color:var(--apple-blue-link); text-decoration:underline;">wlumsa.org</a>)</li>
-                                        <li>Engineered high-reliability donation, registration, and event ticketing workflows, directly facilitating <strong>$50K+ in charitable campus contributions</strong></li>
-                                        <li>Automated prayer time calculations and synchronized real-time schedules across multi-platform client devices, eliminating manual scheduling overhead</li>
+                                        <li>Engineered high reliability donation, registration, and event ticketing workflows, directly facilitating <strong>$50K+ in charitable campus contributions</strong></li>
+                                        <li>Automated prayer time calculations and synchronized real time schedules across multi platform client devices, eliminating manual scheduling overhead</li>
                                     </ul>
                                     <div class="row-tech-chips">
                                         <span class="tech-chip">Next.js</span>
@@ -943,9 +943,9 @@
                                 </div>
                                 <div class="row-body">
                                     <ul class="row-bullets">
-                                        <li>Led a <strong>team of 4</strong> to build InstantService, an AI-driven PWA — cut service-acquisition time by <strong>70%</strong></li>
-                                        <li>Multi-weighted matching algorithm with <strong>FastAPI + Snowflake</strong> → 40% job volume increase, under-3-min confirmations</li>
-                                        <li>Architected tier-based pricing backend with automated <strong>license/insurance verification</strong></li>
+                                        <li>Led a <strong>team of 4</strong> to build InstantService, an AI driven PWA   cut service acquisition time by <strong>70%</strong></li>
+                                        <li>Multi weighted matching algorithm with <strong>FastAPI + Snowflake</strong> → 40% job volume increase, under 3 minute confirmations</li>
+                                        <li>Architected tier based pricing backend with automated <strong>license/insurance verification</strong></li>
                                     </ul>
                                     <div class="row-tech-chips">
                                         <span class="tech-chip">FastAPI</span>
@@ -960,14 +960,14 @@
                             <div class="experience-row">
                                 <div class="row-header">
                                     <div class="row-title-group">
-                                        <span class="row-date">SEPTEMBER 2021 — SEPTEMBER 2022</span>
+                                        <span class="row-date">SEPTEMBER 2021   SEPTEMBER 2022</span>
                                         <h3>Logistics</h3>
                                         <h4 class="row-org">Hack the North</h4>
                                     </div>
                                 </div>
                                 <div class="row-body">
                                     <ul class="row-bullets">
-                                        <li>Managed on-site logistics and wayfinding for <strong>1,000+ students</strong> at Canada's largest hackathon</li>
+                                        <li>Managed on site logistics and wayfinding for <strong>1,000+ students</strong> at Canada's largest hackathon</li>
                                         <li>Coordinated registration and demos for <strong>827 attendees across 222 projects</strong></li>
                                         <li>Resolved operational bottlenecks with <strong>zero major schedule disruptions</strong></li>
                                     </ul>
@@ -990,9 +990,9 @@
                                 </div>
                                 <div class="row-body">
                                     <ul class="row-bullets">
-                                        <li>On-call technical support for <strong>300+ participants across 73 teams</strong> during a 36-hour hackathon</li>
+                                        <li>On call technical support for <strong>300+ participants across 73 teams</strong> during a 36 hour hackathon</li>
                                         <li>Triaged critical blockers spanning <strong>Git workflows, API integrations</strong> & environment configs</li>
-                                        <li>First-line escalation point for complex <strong>deployment & architecture</strong> inquiries</li>
+                                        <li>First line escalation point for complex <strong>deployment & architecture</strong> inquiries</li>
                                     </ul>
                                     <div class="row-tech-chips">
                                         <span class="tech-chip">Technical Triage</span>
@@ -1209,7 +1209,7 @@
         <div class="resume-modal-container">
             <div class="resume-modal-header">
                 <div class="resume-modal-title-group">
-                    <h3 id="resume-modal-title" class="resume-modal-title">Shamir Khan &mdash; Resume</h3>
+                    <h3 id="resume-modal-title" class="resume-modal-title">Shamir Khan   Resume</h3>
                     <span class="resume-modal-badge">Verified 1-Page Master &bull; Latest</span>
                 </div>
                 <div class="resume-modal-actions">
