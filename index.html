@@ -3,1281 +3,365 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shamir Khan | Software Engineer | Wilfrid Laurier University</title>
+    <title>Shamir Khan | Software Engineer | Ontario, Canada</title>
     
-    <!-- Primary Search Engine Optimization (SEO) -->
-    <meta name="title" content="Shamir Khan | Software Engineer | Wilfrid Laurier University">
-    <meta name="description" content="Official engineering portfolio of Shamir Khan, Computer Science student at Wilfrid Laurier University specializing in distributed queue engines, high concurrency ACID ledgers, and real time Kafka event streaming.">
-    <meta name="keywords" content="Shamir Khan, Shamir Khan Laurier, Shamir Khan Wilfrid Laurier, Shamir Khan Software Engineer, Computer Science, Distributed Systems, Python, TypeScript, C++, NexusQueue, LedgerMesh, CloudGuard">
+    <meta name="title" content="Shamir Khan | Software Engineer | Ontario, Canada">
+    <meta name="description" content="Portfolio of Shamir Khan, 3rd Year Computer Science student at Wilfrid Laurier University in Waterloo, Ontario, Canada. Building high throughput distributed systems, real time telemetry, and backend infrastructure.">
+    <meta name="keywords" content="Shamir Khan, Software Engineer, Wilfrid Laurier University, Waterloo, Ontario, Canada, Distributed Systems, C++, Python, TypeScript, Kafka, NexusQueue, LedgerMesh, CloudGuard">
     <meta name="author" content="Shamir Khan">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://shamir-khan-dev.github.io/Personal-Website/">
 
-    <!-- Open Graph / Facebook / LinkedIn / WhatsApp Preview Cards -->
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="Shamir Khan | Software Engineer">
-    <meta property="og:description" content="High-throughput distributed systems & autonomous AI. 119k jobs/sec queue engine, 10.8k tx/sec ACID ledger, and real time Kafka streaming.">
+    <meta property="og:title" content="Shamir Khan | Software Engineer | Ontario, Canada">
+    <meta property="og:description" content="High throughput distributed systems and autonomous AI. 119k jobs/sec queue engine, 10.8k tx/sec ACID ledger, and real time Kafka telemetry.">
     <meta property="og:url" content="https://shamir-khan-dev.github.io/Personal-Website/">
-    <meta property="og:site_name" content="Shamir Khan Engineering Portfolio">
-    <meta property="og:image" content="https://shamir-khan-dev.github.io/Personal-Website/assets/hero_tech_graphic.png">
 
-    <!-- Twitter / X Preview Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Shamir Khan | Software Engineer">
-    <meta name="twitter:description" content="High-throughput distributed systems & autonomous AI. Computer Science student at Wilfrid Laurier University.">
-    <meta name="twitter:image" content="https://shamir-khan-dev.github.io/Personal-Website/assets/hero_tech_graphic.png">
-
-    <!-- Schema.org Person Structured Data for Google Knowledge Graph & Search Ranking -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Shamir Khan",
-      "alternateName": "Shamir",
       "url": "https://shamir-khan-dev.github.io/Personal-Website/",
       "jobTitle": "Software Engineer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Ontario",
+        "addressCountry": "Canada"
+      },
       "affiliation": {
         "@type": "CollegeOrUniversity",
-        "name": "Wilfrid Laurier University",
-        "url": "https://www.wlu.ca"
-      },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
         "name": "Wilfrid Laurier University"
       },
-      "knowsAbout": [
-        "Distributed Systems",
-        "Computer Science",
-        "Python",
-        "TypeScript",
-        "C++",
-        "PostgreSQL",
-        "Apache Kafka",
-        "Redis",
-        "FastAPI",
-        "Next.js"
-      ],
       "sameAs": [
         "https://github.com/shamir-khan-dev",
-        "https://linkedin.com/in/shamir-khan-dev"
+        "https://www.linkedin.com/in/shamir-khan-40698123b/"
       ]
     }
     </script>
-    <!-- Google Fonts: Inter (Body & Labels) and Inter Tight (Headings) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23000000'/%3E%3Ctext x='50%25' y='65%25' font-size='42' font-family='system-ui, -apple-system, sans-serif' font-weight='600' fill='%23ffffff' text-anchor='middle'%3ESK%3C/text%3E%3C/svg%3E">
-</head>
-<body class="apple-system">
-    <!-- Apple-style Global Nav (Sticky Translucent) -->
-    <header id="header" class="global-nav">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <a href="#" class="brand-wordmark">SK</a>
-            </div>
-            
-            <!-- Mobile Menu Toggle Button -->
-            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
-                <span class="line line-top"></span>
-                <span class="line line-bottom"></span>
-            </button>
 
-            <!-- Navigation Links -->
-            <nav class="nav-links">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <button type="button" class="nav-cta-btn open-resume-modal" aria-label="Preview Resume">Resume</button>
-                <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Switch Theme">
-                    <svg class="theme-icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-                    <svg class="theme-icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                </button>
-            </nav>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%232563eb'/%3E%3Ctext x='50%25' y='65%25' font-size='40' font-family='sans-serif' font-weight='700' fill='%23ffffff' text-anchor='middle'%3ESK%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="site-nav">
+        <div class="container nav-wrap">
+            <a href="#" class="nav-brand">Shamir Khan</a>
+            <div class="nav-actions">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="assets/Shamir_Khan_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 6px 14px; font-size: 0.85rem;">Resume PDF</a>
+                <button type="button" id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Chapter 1: Immersive Hero Section (Absolute Black #000000) -->
-        <section id="hero" class="hero-chapter dark-scene">
-            <div class="hero-container">
-                <div class="hero-text-block reveal">
-                    <span class="hero-eyebrow">WILFRID LAURIER UNIVERSITY</span>
-                    <h1 class="hero-headline">Software Engineer.</h1>
-                    <h2 class="hero-subheadline">Shamir Khan. High-throughput distributed systems &amp; autonomous AI.</h2>
-                    <p class="hero-summary">
-                        Computer Science student specializing in distributed queue engines, high concurrency financial ledgers, and real time Kafka event streaming. Proven track record delivering verified client production code.
-                    </p>
-                    
-                    <div class="hero-actions">
-                        <button type="button" class="button-primary open-resume-modal"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px;vertical-align:text-top;"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>Preview Resume</button>
-                        <a href="assets/Shamir_Khan_Resume.pdf" target="_blank" rel="noopener noreferrer" class="button-secondary" download>Download PDF</a>
-                        <a href="#projects" class="button-text-link">Explore Built Projects <span class="arrow">↓</span></a>
-                    </div>
+    <main class="container">
 
-                    <!-- Apple-style High-Impact Specs Bar (Instant Metrics Above the Fold) -->
-                    <div class="hero-metrics-bar">
-                        <div class="hero-metric-item">
-                            <span class="metric-num">119k</span>
-                            <span class="metric-desc">jobs/sec Engine</span>
-                        </div>
-                        <div class="hero-metric-item">
-                            <span class="metric-num">10.8k</span>
-                            <span class="metric-desc">tx/sec (0.05ms OCC)</span>
-                        </div>
-                        <div class="hero-metric-item">
-                            <span class="metric-num">100%</span>
-                            <span class="metric-desc">Zero-Drift Tie-Out</span>
-                        </div>
-                        <div class="hero-metric-item">
-                            <span class="metric-num">250+</span>
-                            <span class="metric-desc">Active Campus Users</span>
-                        </div>
-                        <div class="hero-metric-item">
-                            <span class="metric-num">$50K+</span>
-                            <span class="metric-desc">Processed / Raised</span>
-                        </div>
-                    </div>
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <div class="hero-profile">
+                <div class="hero-role-badge">
+                    <span class="status-dot"></span>
+                    Available for Summer 2027 Software Engineering Roles
+                </div>
+                
+                <h1 class="hero-title">Shamir Khan</h1>
+                
+                <div class="hero-subtitle">
+                    Software Engineer · 3rd Year Computer Science at Wilfrid Laurier University
                 </div>
 
-                <div class="hero-telemetry-container reveal reveal-delay">
-                    <!-- Live Systems & Recruiter Telemetry Command Center -->
-                    <div class="telemetry-card">
-                        <!-- Command Center Header -->
-                        <div class="telemetry-header">
-                            <div class="telemetry-badge-live">
-                                <span class="telemetry-beacon"></span>
-                                <span class="telemetry-live-title">LIVE ARCHITECTURE</span>
-                            </div>
-                            <div class="telemetry-meta">
-                                <span class="telemetry-region">PROD CLUSTER · 0.05ms</span>
-                            </div>
-                        </div>
+                <div class="hero-location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Based in <b>Ontario, Canada</b> (Waterloo and Greater Toronto Area)</span>
+                </div>
 
-                        <!-- Microservice Telemetry Rows -->
-                        <div class="telemetry-services">
-                            <!-- Service 1: NexusQueue -->
-                            <a href="#projects" class="telemetry-service-row">
-                                <div class="service-row-main">
-                                    <div class="service-identity">
-                                        <div class="service-name-group">
-                                            <span class="service-name">NexusQueue</span>
-                                            <span class="service-role">Distributed Queue</span>
-                                        </div>
-                                        <div class="service-tags">
-                                            <span class="tag-tech ts">TypeScript</span>
-                                            <span class="tag-tech redis">Redis</span>
-                                            <span class="tag-tech bullmq">BullMQ</span>
-                                        </div>
-                                    </div>
-                                    <div class="service-metric-badge">
-                                        <span class="metric-highlight">119,000</span>
-                                        <span class="metric-sub">jobs / sec</span>
-                                    </div>
-                                </div>
-                                <div class="service-row-sub">
-                                    <span class="sub-stat"><span class="dot-live green"></span> Zero Data Loss</span>
-                                    <span class="sub-stat">43 Vitest Suite 100%</span>
-                                    <span class="sub-stat highlight">P99: 1.2ms</span>
-                                </div>
-                            </a>
+                <p class="hero-bio">
+                    I engineer low latency distributed systems, high throughput event queues, and deterministic financial software. Focused on backend infrastructure, concurrency control, and shipping reliable production software.
+                </p>
 
-                            <!-- Service 2: LedgerMesh -->
-                            <a href="#projects" class="telemetry-service-row">
-                                <div class="service-row-main">
-                                    <div class="service-identity">
-                                        <div class="service-name-group">
-                                            <span class="service-name">LedgerMesh</span>
-                                            <span class="service-role">ACID Concurrency</span>
-                                        </div>
-                                        <div class="service-tags">
-                                            <span class="tag-tech py">Python 3.12</span>
-                                            <span class="tag-tech pg">PostgreSQL</span>
-                                            <span class="tag-tech occ">OCC Engine</span>
-                                        </div>
-                                    </div>
-                                    <div class="service-metric-badge">
-                                        <span class="metric-highlight">10,790</span>
-                                        <span class="metric-sub">tx / sec</span>
-                                    </div>
-                                </div>
-                                <div class="service-row-sub">
-                                    <span class="sub-stat"><span class="dot-live cyan"></span> 0.05ms Isolation</span>
-                                    <span class="sub-stat">100% Tie-Out ($0.00 Drift)</span>
-                                    <span class="sub-stat highlight">Serializable</span>
-                                </div>
-                            </a>
+                <div class="hero-cta-group">
+                    <a href="assets/Shamir_Khan_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        View Resume (PDF)
+                    </a>
+                    <a href="https://github.com/shamir-khan-dev" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/shamir-khan-40698123b/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:shamirk2121@gmail.com" class="btn-secondary">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Email Me
+                    </a>
+                </div>
 
-                            <!-- Service 3: CloudGuard -->
-                            <a href="#projects" class="telemetry-service-row">
-                                <div class="service-row-main">
-                                    <div class="service-identity">
-                                        <div class="service-name-group">
-                                            <span class="service-name">CloudGuard</span>
-                                            <span class="service-role">eBPF Security Agent</span>
-                                        </div>
-                                        <div class="service-tags">
-                                            <span class="tag-tech cpp">C++20</span>
-                                            <span class="tag-tech kafka">Apache Kafka</span>
-                                            <span class="tag-tech linux">Linux Kernel</span>
-                                        </div>
-                                    </div>
-                                    <div class="service-metric-badge">
-                                        <span class="metric-highlight">&lt; 10 microseconds</span>
-                                        <span class="metric-sub">telemetry latency</span>
-                                    </div>
-                                </div>
-                                <div class="service-row-sub">
-                                    <span class="sub-stat"><span class="dot-live purple"></span> Real-time Streaming</span>
-                                    <span class="sub-stat">Zero Dropped Syscalls</span>
-                                    <span class="sub-stat highlight">Next.js UI</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Real-World Impact Strip -->
-                        <div class="telemetry-impact-strip">
-                            <div class="impact-item">
-                                <span class="impact-num">250+</span>
-                                <span class="impact-label">Production Users</span>
-                            </div>
-                            <div class="impact-sep"></div>
-                            <div class="impact-item">
-                                <span class="impact-num">$50K+</span>
-                                <span class="impact-label">Funds Processed</span>
-                            </div>
-                            <div class="impact-sep"></div>
-                            <div class="impact-item">
-                                <span class="impact-num">$0</span>
-                                <span class="impact-label">Client Cloud Cost</span>
-                            </div>
-                        </div>
-
-                        <!-- Recruiter Fast-Scan Tech Cloud -->
-                        <div class="telemetry-scan-cloud">
-                            <span class="scan-label">CORE STACK:</span>
-                            <span class="scan-chip key-skill">Python</span>
-                            <span class="scan-chip key-skill">TypeScript</span>
-                            <span class="scan-chip key-skill">C++</span>
-                            <span class="scan-chip">PostgreSQL</span>
-                            <span class="scan-chip">Kafka</span>
-                            <span class="scan-chip">Redis</span>
-                            <span class="scan-chip">Docker</span>
-                            <span class="scan-chip">FastAPI</span>
-                            <span class="scan-chip">Next.js</span>
-                        </div>
+                <div class="stack-strip">
+                    <div class="stack-title">Core Engineering Stack</div>
+                    <div class="pills-wrap">
+                        <span class="pill">C++</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">TypeScript</span>
+                        <span class="pill">Go</span>
+                        <span class="pill">Java</span>
+                        <span class="pill">Node.js</span>
+                        <span class="pill">FastAPI</span>
+                        <span class="pill">Next.js</span>
+                        <span class="pill">Apache Kafka</span>
+                        <span class="pill">PostgreSQL</span>
+                        <span class="pill">Docker</span>
+                        <span class="pill">Redis</span>
+                        <span class="pill">Vitest</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Chapter 2: Editorial About / Education (Pale Apple Gray #f5f5f7) -->
-        <section id="about" class="editorial-chapter light-scene-gray">
-            <div class="container">
-                <div class="editorial-grid">
-                    <div class="editorial-left reveal">
-                        <span class="section-eyebrow">EDUCATION</span>
-                        <h2 class="section-headline">Rigorous studies. Engineered mindset.</h2>
+        <!-- Selected Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-head">
+                <h2 class="section-heading">Featured Engineering Projects</h2>
+                <span class="section-note">Systems, Architecture and Verified Impact</span>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: NexusQueue -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="assets/nexusqueue_preview.png" alt="NexusQueue Architecture Preview" loading="lazy">
                     </div>
-                    <div class="editorial-right reveal reveal-delay">
-                        <div class="education-block">
-                            <span class="edu-date">GRADUATING APRIL 2028</span>
-                            <h3>Bachelor of Science in Computer Science</h3>
-                            <h4 class="edu-institution">Wilfrid Laurier University</h4>
-                            <div class="edu-details">
-                                <p class="gpa-highlight">Waterloo, ON</p>
-                                <p>Core studies focused on computational fundamentals, systems design, and software engineering principles. Actively translating theory into clean, reliable, and production-ready applications.</p>
-                                <p><strong>Core CS:</strong> Data Structures, OOP, Discrete Math, Algorithms, Computer Architecture, Digital Electronics.</p>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">NexusQueue : Distributed Task and DAG Engine</h3>
+                            <div class="project-links">
+                                <a href="https://nexusqueue-0l7s.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo ↗</a>
+                                <a href="https://github.com/shamir-khan-dev/NexusQueue" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
                             </div>
                         </div>
+                        <ul class="project-bullets">
+                            <li>Engineered an asynchronous background job processing engine benchmarked at 119,000 jobs per second across 50 concurrent worker routines with zero task loss.</li>
+                            <li>Implemented a Binary Min Heap Priority Queue with O(log n) dispatch, combined with Token Bucket rate limiters and AWS Full Jitter backoff against thundering herds.</li>
+                            <li>Designed a DAG Workflow Scheduler executing multi stage dependent jobs using Kahn topological sort, paired with automated Zombie Worker Watchdog monitors.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>TypeScript</span>
+                            <span>Node.js</span>
+                            <span>Redis</span>
+                            <span>BullMQ</span>
+                            <span>WebSockets</span>
+                            <span>Vitest</span>
+                        </div>
                     </div>
+                </article>
+
+                <!-- Project 2: CloudGuard -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="assets/cloudguard_preview.png" alt="CloudGuard Telemetry Architecture" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">CloudGuard : Cloud Security Posture Management</h3>
+                            <div class="project-links">
+                                <a href="https://cloud-guard-theta.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">Live Site ↗</a>
+                                <a href="https://github.com/shamir-khan-dev/Cloud-Guard" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <ul class="project-bullets">
+                            <li>Architected an event driven cloud telemetry platform across 5 containerized microservices connected via Apache Kafka, streaming infrastructure events across AWS, Azure, and GCP with 99.9% uptime.</li>
+                            <li>Built a native C++ telemetry daemon utilizing Windows OS kernel APIs and Linux proc parsers to publish system performance metrics at sub millisecond overhead.</li>
+                            <li>Developed an unsupervised scikit learn IsolationForest ML pipeline scoring live Kafka streams in 507ms (p50), slashing security incident MTTR by 85%.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>C++20</span>
+                            <span>Python</span>
+                            <span>Apache Kafka</span>
+                            <span>Docker</span>
+                            <span>PostgreSQL</span>
+                            <span>scikit learn</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: LedgerMesh -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="assets/ledgermesh_preview.png" alt="LedgerMesh Transaction Engine" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">LedgerMesh : High Concurrency Financial Ledger</h3>
+                            <div class="project-links">
+                                <a href="https://ledgermesh.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo ↗</a>
+                                <a href="https://github.com/shamir-khan-dev/LedgerMesh" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <ul class="project-bullets">
+                            <li>Built a high throughput financial transaction core benchmarked at 10,790 transactions per second with 0.05ms latency, enforcing strict double entry bookkeeping to eliminate balance drift.</li>
+                            <li>Designed Optimistic Concurrency Control (OCC) with atomic version verification and exponential backoff across 20 worker coroutines with SHA 256 Merkle audit trails.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>TypeScript</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>OCC</span>
+                            <span>Prometheus</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: InstantService -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="assets/instantservice_preview.png" alt="InstantService Marketplace" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">InstantService : AI Powered Contractor Marketplace</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/shamir-khan-dev" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <ul class="project-bullets">
+                            <li>Led a team of 4 developers to build an AI native progressive web app with Gemini 1.5 Pro and FastAPI, reducing service acquisition inquiry time by 70%.</li>
+                            <li>Engineered a multi weighted contractor allocation algorithm using Snowflake and FastAPI, driving a 40% increase in job volume and delivering verified contractor matches in under 3 minutes.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>Python</span>
+                            <span>Snowflake</span>
+                            <span>Gemini 1.5 Pro</span>
+                            <span>React</span>
+                            <span>PWA</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: WLU MSA Platform -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="assets/wlumsa_preview.png" alt="WLU MSA Production Platform" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-name">WLU MSA : Production Campus Web Platform</h3>
+                            <div class="project-links">
+                                <a href="https://wlumsa.org/" target="_blank" rel="noopener noreferrer" class="project-link">Live Site ↗</a>
+                            </div>
+                        </div>
+                        <ul class="project-bullets">
+                            <li>Architected and deployed a production web platform serving 250 active campus members using Next.js, React, TypeScript, and Tailwind CSS, maintaining 99.9% uptime (wlumsa.org).</li>
+                            <li>Engineered dynamic donation and event registration modules integrated with Payload CMS and payment webhooks, supporting student initiatives that processed $50K+ in charitable contributions.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Payload CMS</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-head">
+                <h2 class="section-heading">Work Experience</h2>
+                <span class="section-note">Commercial Deliveries and Engineering Roles</span>
+            </div>
+
+            <div class="experience-list">
+                
+                <div class="experience-item">
+                    <div class="experience-top">
+                        <span class="experience-role">AI Software Engineer (Client Project)</span>
+                        <span class="experience-date">October 2026 to Present</span>
+                    </div>
+                    <div class="experience-company">Go Fig Bookz (via Riipen Labs) · Remote, ON</div>
+                    <ul class="experience-bullets">
+                        <li>Architected an autonomous AI bookkeeping workflow in TypeScript and Node.js to automate invoice reconciliation, achieving a 100% tie out with zero discrepancy across $17K+ in client disbursements.</li>
+                        <li>Engineered deterministic three way document matching algorithms and automated tax auditing, identifying duplicate vendor invoices and cutting manual accounting reconciliation time by 80%.</li>
+                        <li>Authored comprehensive Vitest test suites across 43 automated tests, validating multi bank statement parsers, deterministic ledger writes, and reliable audit pipelines.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-top">
+                        <span class="experience-role">Lead Web Developer and Systems Administrator</span>
+                        <span class="experience-date">January 2026 to Present</span>
+                    </div>
+                    <div class="experience-company">Wilfrid Laurier University Student Association (WLU MSA) · Waterloo, ON</div>
+                    <ul class="experience-bullets">
+                        <li>Architected and deployed the central production web platform serving 250 active campus members with 99.9% uptime.</li>
+                        <li>Engineered donation funnels and event registration workflows processing over $50K in verified community contributions.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="section-head">
+                <h2 class="section-heading">Education</h2>
+                <span class="section-note">Academic Background</span>
+            </div>
+
+            <div class="education-box">
+                <div class="education-top">
+                    <span class="education-degree">Bachelor of Science in Computer Science (3rd Year)</span>
+                    <span class="education-date">Expected April 2028</span>
+                </div>
+                <div class="education-school">Wilfrid Laurier University · Waterloo, ON</div>
+                <div class="education-courses">
+                    <b>Relevant Coursework</b>: Distributed Systems, Operating Systems, Database Systems, Computer Networks, Systems Architecture, Data Structures and Algorithms, Object Oriented Programming, Discrete Mathematics.
                 </div>
             </div>
         </section>
 
-        <!-- Chapter 3: Interactive Projects Grid (Pure White #ffffff) -->
-        <section id="projects" class="editorial-chapter light-scene-white">
-            <div class="container">
-                <div class="section-header-centered reveal">
-                    <span class="section-eyebrow">PROJECTS</span>
-                    <h2 class="section-headline">Designed for purpose. Built for scale.</h2>
-                    
-                    <!-- Apple-style Segmented Filter Controls -->
-                    <div class="segmented-control">
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
-                        <button class="filter-btn" data-filter="backend">Backend</button>
-                        <button class="filter-btn" data-filter="web">Web</button>
-                    </div>
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-head">
+                <h2 class="section-heading">Get in Touch</h2>
+                <span class="section-note">Direct Communication</span>
+            </div>
+
+            <div class="footer-content" style="align-items: flex-start; text-align: left;">
+                <p class="footer-text">
+                    I am actively seeking Software Engineering Internships and Co op positions for Summer 2027. Based in <b>Ontario, Canada</b>, open to in person roles across Waterloo, Toronto, and remote teams.
+                </p>
+                <div class="footer-links" style="justify-content: flex-start; margin-top: 10px;">
+                    <a href="mailto:shamirk2121@gmail.com">shamirk2121@gmail.com</a>
+                    <a href="tel:6476066063">(647) 606 6063</a>
+                    <a href="https://www.linkedin.com/in/shamir-khan-40698123b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/shamir-khan-dev" target="_blank" rel="noopener noreferrer" target="_blank">GitHub</a>
+                    <a href="assets/Shamir_Khan_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
                 </div>
-
-                <!-- Projects Card Grid -->
-                <div class="projects-grid">
-                    <!-- Project Card 1: NexusQueue   DISTRIBUTED SYSTEMS FEATURED -->
-                    <div class="project-card reveal" data-categories="backend fullstack" style="border: 1px solid rgba(56, 189, 248, 0.35); background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);">
-                        <div class="card-preview-frame">
-                            <div class="preview-browser-header">
-                                <div class="browser-traffic-lights">
-                                    <span class="traffic-light close"></span>
-                                    <span class="traffic-light minimize"></span>
-                                    <span class="traffic-light expand"></span>
-                                </div>
-                                <div class="browser-address-bar">
-                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    <span class="url-text">nexusqueue-0l7s.onrender.com</span>
-                                </div>
-                                <div class="preview-live-indicator">
-                                    <span class="pulse-dot"></span> LIVE APP
-                                </div>
-                            </div>
-                            <div class="preview-image-wrapper">
-                                <video class="project-preview-video" autoplay loop muted playsinline poster="assets/nexusqueue_preview.png">
-                                    <source src="assets/nexusqueue_demo.mp4" type="video/mp4">
-                                </video>
-                                <div class="preview-hover-overlay">
-                                    <a href="https://nexusqueue-0l7s.onrender.com/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Live Demo ↗</a>
-                                    <a href="assets/nexusqueue_demo.mp4" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Watch Video ▶</a>
-                                    <a href="https://github.com/shamir-khan-dev/NexusQueue" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-inner">
-                            <div class="card-body">
-                                <span class="card-eyebrow">TYPESCRIPT · NODE.JS 22 · WEBSOCKETS · BINARY MIN-HEAP · DAG SCHEDULER · REDIS</span>
-                                <h3 class="card-title">NexusQueue <span style="font-size:0.5em; font-weight:500; color:#38bdf8; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">DISTRIBUTED ENGINE</span></h3>
-                                
-                                <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
-                                    <div class="spec-metric">
-                                        <span class="metric-value">119k</span>
-                                        <span class="metric-label">jobs/sec Enqueue</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">3.4k</span>
-                                        <span class="metric-label">tasks/sec Processed</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">22/22</span>
-                                        <span class="metric-label">Tests Passing</span>
-                                    </div>
-                                </div>
-
-                                <ul class="card-bullets">
-                                    <li>Architected an asynchronous background task processing engine benchmarked at <strong>119,000 jobs per second</strong> to offload heavy computing and keep web applications fast</li>
-                                    <li>Built an intelligent <strong>priority scheduling queue</strong> with instant dispatch, ensuring high urgency requests always process ahead of routine tasks</li>
-                                    <li>Implemented distributed <strong>rate limiters and backoff logic</strong> to protect backend databases from sudden traffic spikes and server crashes</li>
-                                    <li>Designed an automated <strong>task supervisor</strong> that schedules dependent multi stage workflows and automatically reclaims interrupted background jobs</li>
-                                </ul>
-                            </div>
-                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                                <a href="https://nexusqueue-0l7s.onrender.com/" target="_blank" rel="noopener" class="card-text-link" style="color: #38bdf8; font-weight: 600;">Live Dashboard <span class="arrow">→</span></a>
-                                <a href="assets/nexusqueue_demo.mp4" target="_blank" rel="noopener" class="card-text-link" style="color: #a855f7; font-weight: 600;">Launch Video <span class="arrow">▶</span></a>
-                                <a href="https://github.com/shamir-khan-dev/NexusQueue" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 2: LedgerMesh   FINANCIAL CORE FEATURED -->
-                    <div class="project-card reveal" data-categories="backend fullstack" style="border: 1px solid rgba(245, 158, 11, 0.35); background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(239, 68, 68, 0.05) 100%);">
-                        <div class="card-preview-frame">
-                            <div class="preview-browser-header">
-                                <div class="browser-traffic-lights">
-                                    <span class="traffic-light close"></span>
-                                    <span class="traffic-light minimize"></span>
-                                    <span class="traffic-light expand"></span>
-                                </div>
-                                <div class="browser-address-bar">
-                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    <span class="url-text">ledgermesh.onrender.com</span>
-                                </div>
-                                <div class="preview-live-indicator">
-                                    <span class="pulse-dot"></span> LIVE APP
-                                </div>
-                            </div>
-                            <div class="preview-image-wrapper">
-                                <video class="project-preview-video" autoplay loop muted playsinline poster="assets/ledgermesh_preview.png">
-                                    <source src="assets/ledgermesh_demo.mp4" type="video/mp4">
-                                </video>
-                                <div class="preview-hover-overlay">
-                                    <a href="https://ledgermesh.onrender.com/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Live Demo ↗</a>
-                                    <a href="assets/ledgermesh_demo.mp4" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Watch Video ▶</a>
-                                    <a href="https://github.com/shamir-khan-dev/LedgerMesh" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-inner">
-                            <div class="card-body">
-                                <span class="card-eyebrow">PYTHON 3.13 · FASTAPI · OPTIMISTIC CONCURRENCY · SHA256 MERKLE TREES · PROMETHEUS</span>
-                                <h3 class="card-title">LedgerMesh <span style="font-size:0.5em; font-weight:500; color:#fbbf24; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">FINANCIAL CLEARING</span></h3>
-                                
-                                <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
-                                    <div class="spec-metric">
-                                        <span class="metric-value">10.8k</span>
-                                        <span class="metric-label">tx/sec Throughput</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">0.05ms</span>
-                                        <span class="metric-label">p50 Latency</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">100%</span>
-                                        <span class="metric-label">Merkle Audit</span>
-                                    </div>
-                                </div>
-
-                                <ul class="card-bullets">
-                                    <li>Engineered a high speed <strong>financial transaction ledger</strong> benchmarked at <strong>10,790 transactions per second</strong> with sub millisecond 0.05ms response times</li>
-                                    <li>Enforces strict <strong>double entry accounting rules</strong> where Total Debits must equal Total Credits, completely preventing double spending and balance discrepancies</li>
-                                    <li>Implemented <strong>Optimistic Concurrency Control</strong> to process high volume financial payments simultaneously without freezing or locking database tables</li>
-                                    <li>Integrated <strong>cryptographic audit verification</strong> using SHA256 proofs, providing complete transparency and a 100% financial tie out with zero dollars drift</li>
-                                </ul>
-                            </div>
-                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                                <a href="https://ledgermesh.onrender.com/" target="_blank" rel="noopener" class="card-text-link" style="color: #f59e0b; font-weight: 600;">Live Console <span class="arrow">→</span></a>
-                                <a href="assets/ledgermesh_demo.mp4" target="_blank" rel="noopener" class="card-text-link" style="color: #fbbf24; font-weight: 600;">Launch Video <span class="arrow">▶</span></a>
-                                <a href="https://github.com/shamir-khan-dev/LedgerMesh" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 3: CloudGuard   FEATURED CSPM -->
-                    <div class="project-card reveal" data-categories="fullstack backend" style="border: 1px solid rgba(56, 189, 248, 0.35); background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(14, 165, 233, 0.05) 100%);">
-                        <div class="card-preview-frame">
-                            <div class="preview-browser-header">
-                                <div class="browser-traffic-lights">
-                                    <span class="traffic-light close"></span>
-                                    <span class="traffic-light minimize"></span>
-                                    <span class="traffic-light expand"></span>
-                                </div>
-                                <div class="browser-address-bar">
-                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    <span class="url-text">cloud-guard-theta.vercel.app</span>
-                                </div>
-                                <div class="preview-live-indicator">
-                                    <span class="pulse-dot"></span> LIVE APP
-                                </div>
-                            </div>
-                            <div class="preview-image-wrapper">
-                                <video class="project-preview-video" autoplay loop muted playsinline poster="assets/cloudguard_preview.png">
-                                    <source src="assets/cloudguard_demo.mp4" type="video/mp4">
-                                </video>
-                                <div class="preview-hover-overlay">
-                                    <a href="https://cloud-guard-theta.vercel.app" target="_blank" rel="noopener" class="preview-overlay-btn primary">Live Demo ↗</a>
-                                    <a href="assets/cloudguard_demo.mp4" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Watch Video ▶</a>
-                                    <a href="https://github.com/shamir-khan-dev/Cloud-Guard" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-inner">
-                            <div class="card-body">
-                                <span class="card-eyebrow">C++ · JAVA SPRING BOOT · PYTHON ML · SCALA SPARK · KAFKA · CYBER DEFENSE SOC</span>
-                                <h3 class="card-title">CloudGuard SOC <span style="font-size:0.5em; font-weight:500; color:#38bdf8; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">CYBER DEFENSE</span></h3>
-                                
-                                <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
-                                    <div class="spec-metric">
-                                        <span class="metric-value">Kernel</span>
-                                        <span class="metric-label">C++ Telemetry</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">ML Forest</span>
-                                        <span class="metric-label">Anomaly Triage</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">Real Time</span>
-                                        <span class="metric-label">Kafka Streams</span>
-                                    </div>
-                                </div>
-
-                                <ul class="card-bullets">
-                                    <li>Architected a real time <strong>Security Operations Center</strong> across containerized microservices connected via <strong>Apache Kafka</strong> to protect AWS, Azure, and Google Cloud</li>
-                                    <li>Built a native <strong>C++ kernel telemetry agent</strong> sampling host CPU and RAM utilization directly from the operating system with sub millisecond overhead</li>
-                                    <li>Deployed an unsupervised <strong>machine learning pipeline</strong> to detect brute force cyber attacks and unauthorized billing spikes, cutting incident resolution time by 85%</li>
-                                    <li>Designed an interactive <strong>Next.js cyber defense dashboard</strong> featuring live threat radar sweeps, multi cloud cost run rates, and instant node quarantine workflows</li>
-                                </ul>
-                            </div>
-                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                                <a href="https://cloud-guard-theta.vercel.app" target="_blank" rel="noopener" class="card-text-link" style="color: #38bdf8; font-weight: 600;">Live Dashboard <span class="arrow">→</span></a>
-                                <a href="assets/cloudguard_demo.mp4" target="_blank" rel="noopener" class="card-text-link" style="color: #0ea5e9; font-weight: 600;">Launch Video <span class="arrow">▶</span></a>
-                                <a href="https://github.com/shamir-khan-dev/Cloud-Guard" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 4: AlphaPulse   QUANT & AI FEATURED -->
-                    <div class="project-card reveal" data-categories="fullstack backend" style="border: 1px solid rgba(16, 185, 129, 0.35); background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);">
-                        <div class="card-preview-frame">
-                            <div class="preview-browser-header">
-                                <div class="browser-traffic-lights">
-                                    <span class="traffic-light close"></span>
-                                    <span class="traffic-light minimize"></span>
-                                    <span class="traffic-light expand"></span>
-                                </div>
-                                <div class="browser-address-bar">
-                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    <span class="url-text">stock-analyzer-etmo.onrender.com</span>
-                                </div>
-                                <div class="preview-live-indicator">
-                                    <span class="pulse-dot"></span> LIVE APP
-                                </div>
-                            </div>
-                            <div class="preview-image-wrapper">
-                                <video class="project-preview-video" autoplay loop muted playsinline poster="assets/alphapulse_preview.png">
-                                    <source src="assets/alphapulse_demo.mp4" type="video/mp4">
-                                </video>
-                                <div class="preview-hover-overlay">
-                                    <a href="https://stock-analyzer-etmo.onrender.com/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Live Demo ↗</a>
-                                    <a href="assets/alphapulse_demo.mp4" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Watch Video ▶</a>
-                                    <a href="https://github.com/shamir-khan-dev/stock-analyzer" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-inner">
-                            <div class="card-body">
-                                <span class="card-eyebrow">PYTHON · FASTAPI · NUMPY · PANDAS · OPENCV · GEMINI AI · VECTORIZED TA</span>
-                                <h3 class="card-title">AlphaPulse <span style="font-size:0.5em; font-weight:500; color:#34d399; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">QUANT TERMINAL</span></h3>
-                                
-                                <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
-                                    <div class="spec-metric">
-                                        <span class="metric-value">6+</span>
-                                        <span class="metric-label">Vectorized TA</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">OpenCV</span>
-                                        <span class="metric-label">Chart Vision</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">&lt; 30ms</span>
-                                        <span class="metric-label">Vectorized Engine</span>
-                                    </div>
-                                </div>
-
-                                <ul class="card-bullets">
-                                    <li>Built a high speed <strong>quantitative financial analysis terminal</strong> in <strong>Python</strong> computing 6 technical market indicators in under 30 milliseconds</li>
-                                    <li>Engineered a dual mode <strong>visual analysis engine</strong> using <strong>OpenCV and multimodal Gemini AI</strong> to analyze uploaded stock chart screenshots with one click</li>
-                                    <li>Developed an automated <strong>historical backtesting simulation</strong> evaluating trading strategies against 12 months of live market data with built in risk controls</li>
-                                    <li>Designed an interactive <strong>chart interface</strong> with real time paper trading simulation to practice trade execution risk free</li>
-                                </ul>
-                            </div>
-                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                                <a href="https://stock-analyzer-etmo.onrender.com/" target="_blank" rel="noopener" class="card-text-link" style="color: #10b981; font-weight: 600;">Live Terminal <span class="arrow">→</span></a>
-                                <a href="assets/alphapulse_demo.mp4" target="_blank" rel="noopener" class="card-text-link" style="color: #34d399; font-weight: 600;">Launch Video <span class="arrow">▶</span></a>
-                                <a href="https://github.com/shamir-khan-dev/stock-analyzer" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 5: MSA Website (WLU MSA) -->
-                    <div class="project-card reveal" data-categories="web fullstack" style="border: 1px solid rgba(16, 185, 129, 0.25);">
-                        <div class="card-preview-frame">
-                            <div class="preview-browser-header">
-                                <div class="browser-traffic-lights">
-                                    <span class="traffic-light close"></span>
-                                    <span class="traffic-light minimize"></span>
-                                    <span class="traffic-light expand"></span>
-                                </div>
-                                <div class="browser-address-bar">
-                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    <span class="url-text">wlumsa.org</span>
-                                </div>
-                                <div class="preview-live-indicator">
-                                    <span class="pulse-dot"></span> LIVE APP
-                                </div>
-                            </div>
-                            <div class="preview-image-wrapper">
-                                <img src="assets/wlumsa_preview.png" alt="WLU MSA Web Platform Screenshot" class="project-preview-img" loading="lazy">
-                                <div class="preview-hover-overlay">
-                                    <a href="https://wlumsa.org/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Live Site ↗</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-inner">
-                            <div class="card-body">
-                                <span class="card-eyebrow">NEXT.JS · REACT · TYPESCRIPT · TAILWIND CSS · PAYLOAD CMS</span>
-                                <h3 class="card-title">MSA Web Platform <span style="font-size:0.5em; font-weight:500; color:#10b981; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">CAMPUS TECH LEAD</span></h3>
-                                
-                                <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
-                                    <div class="spec-metric">
-                                        <span class="metric-value">$50K+</span>
-                                        <span class="metric-label">Charitable Raised</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">250+</span>
-                                        <span class="metric-label">Active Members</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">99.9%</span>
-                                        <span class="metric-label">Uptime</span>
-                                    </div>
-                                </div>
-
-                                <ul class="card-bullets">
-                                    <li>Architected and deployed the official production web platform serving <strong>250+ active university members</strong> with real time event calendars and community updates</li>
-                                    <li>Built with <strong>Next.js, React, TypeScript</strong>, and Tailwind CSS, maintaining 99.9% continuous uptime</li>
-                                    <li>Engineered dynamic online donation and event registration workflows that helped student initiatives process over <strong>$50,000</strong> in charitable contributions</li>
-                                    <li>Integrated an intuitive content management system enabling non technical student executives to publish announcements and manage community programs easily</li>
-                                </ul>
-                            </div>
-                            <div class="card-action">
-                                <a href="https://wlumsa.org/" target="_blank" rel="noopener" class="card-text-link">Explore Site <span class="arrow">→</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 6: InstantService -->
-                    <div class="project-card reveal" data-categories="backend fullstack" style="border: 1px solid rgba(245, 158, 11, 0.25);">
-                        <div class="card-preview-frame">
-                            <div class="preview-browser-header">
-                                <div class="browser-traffic-lights">
-                                    <span class="traffic-light close"></span>
-                                    <span class="traffic-light minimize"></span>
-                                    <span class="traffic-light expand"></span>
-                                </div>
-                                <div class="browser-address-bar">
-                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    <span class="url-text">instant-service-eight.vercel.app</span>
-                                </div>
-                                <div class="preview-live-indicator">
-                                    <span class="pulse-dot"></span> LIVE APP
-                                </div>
-                            </div>
-                            <div class="preview-image-wrapper">
-                                <video class="project-preview-video" autoplay loop muted playsinline poster="assets/instantservice_preview.png">
-                                    <source src="assets/instantservice_demo.mp4" type="video/mp4">
-                                </video>
-                                <div class="preview-hover-overlay">
-                                    <a href="https://instant-service-eight.vercel.app/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Live Demo ↗</a>
-                                    <a href="assets/instantservice_demo.mp4" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Watch Video ▶</a>
-                                    <a href="https://github.com/shamir-khan-dev/InstantService" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-inner">
-                            <div class="card-body">
-                                <span class="card-eyebrow">NEXT.JS · FASTAPI · SNOWFLAKE · GEMINI 1.5 PRO</span>
-                                <h3 class="card-title">InstantService <span style="font-size:0.5em; font-weight:500; color:#f59e0b; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">CONHACKS</span></h3>
-                                
-                                <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
-                                    <div class="spec-metric">
-                                        <span class="metric-value">70%</span>
-                                        <span class="metric-label">Acquisition Cut</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">40%</span>
-                                        <span class="metric-label">Job Growth</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">&lt; 3m</span>
-                                        <span class="metric-label">Confirmations</span>
-                                    </div>
-                                </div>
-
-                                <ul class="card-bullets">
-                                    <li>Built a mobile web application powered by <strong>Gemini 1.5 Pro</strong> to convert natural language repair requests into instant emergency contractor job orders</li>
-                                    <li>Engineered an intelligent matching algorithm using <strong>FastAPI and Snowflake</strong> connecting clients with available local professionals in under 3 minutes</li>
-                                    <li>Integrated <strong>Google Maps distance calculations</strong> to dispatch the closest technicians, reducing contractor travel overhead by 20%</li>
-                                    <li>Automated contractor license and insurance certificate verification pipelines to establish a verified, high trust customer experience</li>
-                                </ul>
-                            </div>
-                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                                <a href="https://instant-service-eight.vercel.app/" target="_blank" rel="noopener" class="card-text-link">Explore Site <span class="arrow">→</span></a>
-                                <a href="assets/instantservice_demo.mp4" target="_blank" rel="noopener" class="card-text-link" style="color: #3b82f6; font-weight: 600;">Launch Video <span class="arrow">▶</span></a>
-                                <a href="https://github.com/shamir-khan-dev/InstantService" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 7: Subscription Management System -->
-                    <div class="project-card reveal" data-categories="fullstack" style="border: 1px solid rgba(245, 166, 35, 0.35);">
-                        <div class="card-preview-frame">
-                            <div class="preview-browser-header">
-                                <div class="browser-traffic-lights">
-                                    <span class="traffic-light close"></span>
-                                    <span class="traffic-light minimize"></span>
-                                    <span class="traffic-light expand"></span>
-                                </div>
-                                <div class="browser-address-bar">
-                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    <span class="url-text">subscription-app-lime.vercel.app</span>
-                                </div>
-                                <div class="preview-live-indicator">
-                                    <span class="pulse-dot"></span> LIVE APP
-                                </div>
-                            </div>
-                            <div class="preview-image-wrapper">
-                                <video class="project-preview-video" autoplay loop muted playsinline poster="assets/subscription_preview.png">
-                                    <source src="assets/subscription_demo.mp4" type="video/mp4">
-                                </video>
-                                <div class="preview-hover-overlay">
-                                    <a href="https://subscription-app-lime.vercel.app/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Live App ↗</a>
-                                    <a href="assets/subscription_demo.mp4" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Watch Video ▶</a>
-                                    <a href="https://github.com/shamir-khan-dev/Subscription-management-system" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-inner">
-                            <div class="card-body">
-                                <span class="card-eyebrow">REACT · NODE.JS · EXPRESS · MONGODB ATLAS · SWISS LEDGER SYSTEM</span>
-                                <h3 class="card-title">Swiss Ledger Subscriptions <span style="font-size:0.5em; font-weight:500; color:#f5a623; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">DEBIT WALLET</span></h3>
-                                
-                                <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
-                                    <div class="spec-metric">
-                                        <span class="metric-value">EMV Chip</span>
-                                        <span class="metric-label">Debit Wallet</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">Arcjet</span>
-                                        <span class="metric-label">Security Shield</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">Upstash</span>
-                                        <span class="metric-label">Automated Workflows</span>
-                                    </div>
-                                </div>
-
-                                <ul class="card-bullets">
-                                    <li>Built a full stack recurring expense platform inspired by Swiss banking ledgers, featuring an embossed EMV digital debit wallet preview</li>
-                                    <li>Implemented secure user accounts with token based authentication and strict data validation to protect private billing information</li>
-                                    <li>Integrated Arcjet security protection to shield application programming interfaces from automated bots and rate abuse</li>
-                                    <li>Configured automated notification workflows using Upstash to alert members before upcoming subscription renewal charges trigger</li>
-                                </ul>
-                            </div>
-                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                                <a href="https://subscription-app-lime.vercel.app/" target="_blank" rel="noopener" class="card-text-link" style="color: #f5a623; font-weight: 600;">Live App <span class="arrow">→</span></a>
-                                <a href="assets/subscription_demo.mp4" target="_blank" rel="noopener" class="card-text-link" style="color: #10b981; font-weight: 600;">Launch Video <span class="arrow">▶</span></a>
-                                <a href="https://github.com/shamir-khan-dev/Subscription-management-system" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 8: Movie Review Website -->
-                    <div class="project-card reveal" data-categories="fullstack web" style="border: 1px solid rgba(245, 197, 24, 0.35);">
-                        <div class="card-preview-frame">
-                            <div class="preview-browser-header">
-                                <div class="browser-traffic-lights">
-                                    <span class="traffic-light close"></span>
-                                    <span class="traffic-light minimize"></span>
-                                    <span class="traffic-light expand"></span>
-                                </div>
-                                <div class="browser-address-bar">
-                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    <span class="url-text">shamir-khan-dev.github.io/movie-reviews-website</span>
-                                </div>
-                                <div class="preview-live-indicator">
-                                    <span class="pulse-dot"></span> LIVE SITE
-                                </div>
-                            </div>
-                            <div class="preview-image-wrapper">
-                                <video class="project-preview-video" autoplay loop muted playsinline poster="assets/moviereview_preview.png">
-                                    <source src="assets/moviereview_demo.mp4" type="video/mp4">
-                                </video>
-                                <div class="preview-hover-overlay">
-                                    <a href="https://shamir-khan-dev.github.io/movie-reviews-website/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Live Site ↗</a>
-                                    <a href="assets/moviereview_demo.mp4" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Watch Video ▶</a>
-                                    <a href="https://github.com/shamir-khan-dev/movie-reviews-website" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-inner">
-                            <div class="card-body">
-                                <span class="card-eyebrow">JAVASCRIPT · NODE.JS · EXPRESS · MONGODB ATLAS · 35MM CINEMA MARQUEE</span>
-                                <h3 class="card-title">CineRate Marquee <span style="font-size:0.5em; font-weight:500; color:#f5c518; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">35MM CINEMA</span></h3>
-                                
-                                <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
-                                    <div class="spec-metric">
-                                        <span class="metric-value">TMDB API</span>
-                                        <span class="metric-label">Live Discovery</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">MongoDB</span>
-                                        <span class="metric-label">Atlas Cloud DB</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">REST API</span>
-                                        <span class="metric-label">Express CRUD</span>
-                                    </div>
-                                </div>
-
-                                <ul class="card-bullets">
-                                    <li>Crafted a Golden Age 35mm cinema experience with illuminated marquee headers, auditorium noir palettes, and film ticket review cards</li>
-                                    <li>Architected custom Express REST API endpoints allowing film enthusiasts to create, edit, and curate personal reviews</li>
-                                    <li>Engineered persistent cloud database storage on MongoDB Atlas with indexed queries for sub millisecond search results</li>
-                                    <li>Designed responsive film frames with warm projector gold accents and interactive star ratings</li>
-                                </ul>
-                            </div>
-                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                                <a href="https://shamir-khan-dev.github.io/movie-reviews-website/" target="_blank" rel="noopener" class="card-text-link" style="color: #f5c518; font-weight: 600;">Live Site <span class="arrow">→</span></a>
-                                <a href="assets/moviereview_demo.mp4" target="_blank" rel="noopener" class="card-text-link" style="color: #f59e0b; font-weight: 600;">Launch Video <span class="arrow">▶</span></a>
-                                <a href="https://github.com/shamir-khan-dev/movie-reviews-website" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 9: Dragon Repeller RPG -->
-                    <div class="project-card reveal" data-categories="web" style="border: 1px solid rgba(220, 38, 38, 0.35);">
-                        <div class="card-preview-frame">
-                            <div class="preview-browser-header">
-                                <div class="browser-traffic-lights">
-                                    <span class="traffic-light close"></span>
-                                    <span class="traffic-light minimize"></span>
-                                    <span class="traffic-light expand"></span>
-                                </div>
-                                <div class="browser-address-bar">
-                                    <svg class="browser-lock" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    <span class="url-text">shamir-khan-dev.github.io/Front-end-game</span>
-                                </div>
-                                <div class="preview-live-indicator">
-                                    <span class="pulse-dot"></span> LIVE GAME
-                                </div>
-                            </div>
-                            <div class="preview-image-wrapper">
-                                <video class="project-preview-video" autoplay loop muted playsinline poster="assets/dragonrpg_preview.png">
-                                    <source src="assets/dragonrpg_demo.mp4" type="video/mp4">
-                                </video>
-                                <div class="preview-hover-overlay">
-                                    <a href="https://shamir-khan-dev.github.io/Front-end-game/" target="_blank" rel="noopener" class="preview-overlay-btn primary">Play Game ↗</a>
-                                    <a href="assets/dragonrpg_demo.mp4" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Watch Video ▶</a>
-                                    <a href="https://github.com/shamir-khan-dev/Front-end-game" target="_blank" rel="noopener" class="preview-overlay-btn secondary">Code ↗</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-inner">
-                            <div class="card-body">
-                                <span class="card-eyebrow">HTML5 · CSS3 · VANILLA JAVASCRIPT · 16 BIT ARCADE RETRO ENGINE</span>
-                                <h3 class="card-title">Dragon Repeller RPG <span style="font-size:0.5em; font-weight:500; color:#ef4444; margin-left:6px; letter-spacing:0.04em; white-space:nowrap;">ARCADE RETRO</span></h3>
-                                
-                                <div class="card-specs" style="margin-top: 10px; margin-bottom: 12px; padding-top: 0; border-top: none;">
-                                    <div class="spec-metric">
-                                        <span class="metric-value">Dungeon</span>
-                                        <span class="metric-label">Scene Viewport</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">Pure JS</span>
-                                        <span class="metric-label">Zero Dependencies</span>
-                                    </div>
-                                    <div class="spec-metric">
-                                        <span class="metric-value">60 FPS</span>
-                                        <span class="metric-label">DOM Performance</span>
-                                    </div>
-                                </div>
-
-                                <ul class="card-bullets">
-                                    <li>Built an interactive retro browser adventure game entirely in <strong>pure JavaScript, HTML5, and CSS3</strong> without external third party libraries</li>
-                                    <li>Programmed core game logic calculating combat damage, experience leveling, gold rewards, and weapon inventory management</li>
-                                    <li>Demonstrates deep mastery of <strong>browser performance</strong>, direct screen updates, and responsive user event handling</li>
-                                    <li>Designed a responsive fantasy user interface featuring live battle status logs, inventory shopping, and interactive minigames</li>
-                                </ul>
-                            </div>
-                            <div class="card-action" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                                <a href="https://shamir-khan-dev.github.io/Front-end-game/" target="_blank" rel="noopener" class="card-text-link" style="color: #ef4444; font-weight: 600;">Play Game <span class="arrow">→</span></a>
-                                <a href="assets/dragonrpg_demo.mp4" target="_blank" rel="noopener" class="card-text-link" style="color: #f97316; font-weight: 600;">Launch Video <span class="arrow">▶</span></a>
-                                <a href="https://github.com/shamir-khan-dev/Front-end-game" target="_blank" rel="noopener" class="card-text-link">Explore Code <span class="arrow">↗</span></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="footer-copy">
+                    © 2026 Shamir Khan · Built clean, fast, and accessible
                 </div>
             </div>
         </section>
 
-        <!-- Chapter 4: Career Experience (Pale Apple Gray #f5f5f7) -->
-        <section id="experience" class="editorial-chapter light-scene-gray">
-            <div class="container">
-                <div class="editorial-grid">
-                    <div class="editorial-left reveal">
-                        <span class="section-eyebrow">EXPERIENCE</span>
-                        <h2 class="section-headline">Collaborative systems. Professional execution.</h2>
-                    </div>
-                    <div class="editorial-right reveal reveal-delay">
-                        <!-- Apple-style Experience List Container -->
-                        <div class="experience-list">
-                                                        <!-- Role 0: Go Fig Bookz (Riipen Labs) -->
-                            <div class="experience-row">
-                                <div class="row-header">
-                                    <div class="row-title-group">
-                                        <span class="row-date">OCTOBER 2026   PRESENT</span>
-                                        <h3>Software Engineer &amp; Automation Lead</h3>
-                                        <h4 class="row-org">Go Fig Bookz (via Riipen Labs)</h4>
-                                    </div>
-                                </div>
-                                <div class="row-body">
-                                    <ul class="row-bullets">
-                                        <li>Architected an <strong>automated financial data pipeline</strong> in <strong>TypeScript</strong> to extract and reconcile multi bank PDF statements into standardized accounting records</li>
-                                        <li>Engineered custom document parsing engines and local text extraction with <strong>strict privacy</strong> and zero external cloud software expenses</li>
-                                        <li>Authored comprehensive automated test suites covering <strong>43 tests across 9 suites</strong>, verifying mathematical accuracy and zero discrepancies across client financial records</li>
-                                    </ul>
-                                    <div class="row-tech-chips">
-                                        <span class="tech-chip">TypeScript</span>
-                                        <span class="tech-chip">ETL Automation</span>
-                                        <span class="tech-chip">Vitest</span>
-                                        <span class="tech-chip">Data Reconciliation</span>
-                                        <span class="tech-chip">Zero-Knowledge Privacy</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Role 0: The J Healthcare Initiative -->
-                            <div class="experience-row">
-                                <div class="row-header">
-                                    <div class="row-title-group">
-                                        <span class="row-date">AUGUST 2026</span>
-                                        <h3>Operations and Technical Lead</h3>
-                                        <h4 class="row-org">The J Healthcare Initiative (via Riipen Labs)</h4>
-                                    </div>
-                                </div>
-                                <div class="row-body">
-                                    <ul class="row-bullets">
-                                        <li>Led <strong>technical discovery and digital audits</strong> for a healthcare community healthcare non profit, analyzing user journeys and IA to eliminate critical navigation bottlenecks</li>
-                                        <li>Architected a <strong>self guided triage workflow</strong> cutting resource discovery pathways to <strong>under 3 clicks</strong> to reduce cognitive friction</li>
-                                        <li>Authored a quarterly technical execution roadmap technical execution roadmap with <strong>$0 additional tech spend</strong> across an 11 slide presentation client delivery brief</li>
-                                    </ul>
-                                    <div class="row-tech-chips">
-                                        <span class="tech-chip">Technical Discovery</span>
-                                        <span class="tech-chip">Information Architecture</span>
-                                        <span class="tech-chip">Triage Systems</span>
-                                        <span class="tech-chip">Client Delivery</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                                                        <!-- Role: Wilfrid Laurier University MSA -->
-                            <div class="experience-row">
-                                <div class="row-header">
-                                    <div class="row-title-group">
-                                        <span class="row-date">JANUARY 2026   PRESENT</span>
-                                        <h3>Lead Web Developer &amp; Systems Administrator</h3>
-                                        <h4 class="row-org">Muslim Students' Association (WLU MSA)</h4>
-                                    </div>
-                                </div>
-                                <div class="row-body">
-                                    <ul class="row-bullets">
-                                        <li>Architected and deployed production web platform serving <strong>250+ active campus members</strong> with Next.js, React, TypeScript, and Payload CMS (<a href="https://wlumsa.org/" target="_blank" rel="noopener" style="color:var(--apple-blue-link); text-decoration:underline;">wlumsa.org</a>)</li>
-                                        <li>Engineered high reliability donation, registration, and event ticketing workflows, directly facilitating <strong>$50K+ in charitable campus contributions</strong></li>
-                                        <li>Automated prayer time calculations and synchronized real time schedules across multi platform client devices, eliminating manual scheduling overhead</li>
-                                    </ul>
-                                    <div class="row-tech-chips">
-                                        <span class="tech-chip">Next.js</span>
-                                        <span class="tech-chip">React</span>
-                                        <span class="tech-chip">TypeScript</span>
-                                        <span class="tech-chip">Payload CMS</span>
-                                        <span class="tech-chip">Payment Systems</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Role 1: ConHacks -->
-                            <div class="experience-row">
-                                <div class="row-header">
-                                    <div class="row-title-group">
-                                        <span class="row-date">APRIL 2026</span>
-                                        <h3>Full-Stack Developer | Team Lead</h3>
-                                        <h4 class="row-org">ConHacks</h4>
-                                    </div>
-                                </div>
-                                <div class="row-body">
-                                    <ul class="row-bullets">
-                                        <li>Led a <strong>team of 4</strong> to build InstantService, an AI driven PWA   cut service acquisition time by <strong>70%</strong></li>
-                                        <li>Multi weighted matching algorithm with <strong>FastAPI + Snowflake</strong> → 40% job volume increase, under 3 minute confirmations</li>
-                                        <li>Architected tier based pricing backend with automated <strong>license/insurance verification</strong></li>
-                                    </ul>
-                                    <div class="row-tech-chips">
-                                        <span class="tech-chip">FastAPI</span>
-                                        <span class="tech-chip">Snowflake</span>
-                                        <span class="tech-chip">PWA</span>
-                                        <span class="tech-chip">Systems Design</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Role 2: Hack the North -->
-                            <div class="experience-row">
-                                <div class="row-header">
-                                    <div class="row-title-group">
-                                        <span class="row-date">SEPTEMBER 2021   SEPTEMBER 2022</span>
-                                        <h3>Logistics</h3>
-                                        <h4 class="row-org">Hack the North</h4>
-                                    </div>
-                                </div>
-                                <div class="row-body">
-                                    <ul class="row-bullets">
-                                        <li>Managed on site logistics and wayfinding for <strong>1,000+ students</strong> at Canada's largest hackathon</li>
-                                        <li>Coordinated registration and demos for <strong>827 attendees across 222 projects</strong></li>
-                                        <li>Resolved operational bottlenecks with <strong>zero major schedule disruptions</strong></li>
-                                    </ul>
-                                    <div class="row-tech-chips">
-                                        <span class="tech-chip">Logistics</span>
-                                        <span class="tech-chip">Operations Management</span>
-                                        <span class="tech-chip">Event Planning</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Role 3: UofTHacks -->
-                            <div class="experience-row">
-                                <div class="row-header">
-                                    <div class="row-title-group">
-                                        <span class="row-date">FEBRUARY 2022</span>
-                                        <h3>Hackathon Mentor</h3>
-                                        <h4 class="row-org">UofTHacks</h4>
-                                    </div>
-                                </div>
-                                <div class="row-body">
-                                    <ul class="row-bullets">
-                                        <li>On call technical support for <strong>300+ participants across 73 teams</strong> during a 36 hour hackathon</li>
-                                        <li>Triaged critical blockers spanning <strong>Git workflows, API integrations</strong> & environment configs</li>
-                                        <li>First line escalation point for complex <strong>deployment & architecture</strong> inquiries</li>
-                                    </ul>
-                                    <div class="row-tech-chips">
-                                        <span class="tech-chip">Technical Triage</span>
-                                        <span class="tech-chip">System Architecture</span>
-                                        <span class="tech-chip">API Integrations</span>
-                                        <span class="tech-chip">Git Workflows</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Chapter 5: Skills Matrix (Pure White #ffffff) -->
-        <section id="skills" class="editorial-chapter light-scene-white">
-            <div class="container">
-                <div class="editorial-grid">
-                    <div class="editorial-left reveal">
-                        <span class="section-eyebrow">SKILLS</span>
-                        <h2 class="section-headline">Languages, frameworks, and developer tools.</h2>
-                    </div>
-                    <div class="editorial-right reveal reveal-delay">
-                        <div class="skills-matrix">
-                            <!-- Skill Group 1: Languages -->
-                            <div class="skill-category">
-                                <h4>LANGUAGES</h4>
-                                <div class="skill-chips">
-                                    <span class="skill-chip">Python</span>
-                                    <span class="skill-chip">Java</span>
-                                    <span class="skill-chip">C++</span>
-                                    <span class="skill-chip">C</span>
-                                    <span class="skill-chip">Kotlin</span>
-                                    <span class="skill-chip">Scala</span>
-                                    <span class="skill-chip">JavaScript</span>
-                                    <span class="skill-chip">TypeScript</span>
-                                    <span class="skill-chip">HTML</span>
-                                    <span class="skill-chip">CSS</span>
-                                    <span class="skill-chip">SQL</span>
-                                </div>
-                            </div>
-
-                            <!-- Skill Group 2: Frameworks & Tools -->
-                            <div class="skill-category">
-                                <h4>FRAMEWORKS & TOOLS</h4>
-                                <div class="skill-chips">
-                                    <span class="skill-chip">React.js</span>
-                                    <span class="skill-chip">Next.js</span>
-                                    <span class="skill-chip">PWA</span>
-                                    <span class="skill-chip">FastAPI</span>
-                                    <span class="skill-chip">NumPy</span>
-                                    <span class="skill-chip">Pandas</span>
-                                    <span class="skill-chip">OpenCV</span>
-                                    <span class="skill-chip">Spring Boot</span>
-                                    <span class="skill-chip">Apache Kafka</span>
-                                    <span class="skill-chip">Apache Spark</span>
-                                    <span class="skill-chip">PostgreSQL</span>
-                                    <span class="skill-chip">Tailwind CSS</span>
-                                    <span class="skill-chip">Docker</span>
-                                    <span class="skill-chip">Terraform</span>
-                                    <span class="skill-chip">Git</span>
-                                    <span class="skill-chip">GitHub</span>
-                                    <span class="skill-chip">GitHub Actions</span>
-                                    <span class="skill-chip">CI/CD Pipelines</span>
-                                    <span class="skill-chip">Vercel</span>
-                                    <span class="skill-chip">Render</span>
-                                    <span class="skill-chip">DigitalOcean</span>
-                                    <span class="skill-chip">Arcjet</span>
-                                    <span class="skill-chip">Upstash</span>
-                                    <span class="skill-chip">Payload CMS</span>
-                                </div>
-                            </div>
-
-                            <!-- Skill Group 3: AI & Data -->
-                            <div class="skill-category">
-                                <h4>AI & DATA</h4>
-                                <div class="skill-chips">
-                                    <span class="skill-chip">Gemini 1.5 Pro</span>
-                                    <span class="skill-chip">ElevenLabs</span>
-                                    <span class="skill-chip">Snowflake</span>
-                                    <span class="skill-chip">MongoDB</span>
-                                    <span class="skill-chip">IsolationForest ML</span>
-                                    <span class="skill-chip">Computer Vision</span>
-                                    <span class="skill-chip">Quantitative Modeling</span>
-                                    <span class="skill-chip">Vectorized TA</span>
-                                    <span class="skill-chip">Anomaly Detection</span>
-                                    <span class="skill-chip">Generative AI</span>
-                                    <span class="skill-chip">Data Warehousing</span>
-                                    <span class="skill-chip">Stream Processing</span>
-                                </div>
-                            </div>
-
-                            <!-- Skill Group: AI-Assisted Engineering -->
-                            <div class="skill-category">
-                                <h4>AI-ASSISTED ENGINEERING</h4>
-                                <div class="skill-chips">
-                                    <span class="skill-chip">Cursor</span>
-                                    <span class="skill-chip">Antigravity IDE</span>
-                                    <span class="skill-chip">GitHub Copilot</span>
-                                    <span class="skill-chip">Claude 3.5 Sonnet</span>
-                                    <span class="skill-chip">OpenAI Codex</span>
-                                    <span class="skill-chip">Model Context Protocol (MCP)</span>
-                                    <span class="skill-chip">MCP Server Integration</span>
-                                    <span class="skill-chip">Custom Agent Skills</span>
-                                    <span class="skill-chip">Semantic Graph Search</span>
-                                    <span class="skill-chip">Git Automation Agents</span>
-                                    <span class="skill-chip">Prompt Engineering</span>
-                                    <span class="skill-chip">Agentic Workflows</span>
-                                </div>
-                            </div>
-
-                            <!-- Skill Group 4: Concepts -->
-                            <div class="skill-category">
-                                <h4>CONCEPTS</h4>
-                                <div class="skill-chips">
-                                    <span class="skill-chip">System Architecture</span>
-                                    <span class="skill-chip">Microservices</span>
-                                    <span class="skill-chip">REST APIs</span>
-                                    <span class="skill-chip">WebSockets</span>
-                                    <span class="skill-chip">Authentication (JWT)</span>
-                                    <span class="skill-chip">OOP</span>
-                                    <span class="skill-chip">Data Structures</span>
-                                    <span class="skill-chip">Algorithms</span>
-                                    <span class="skill-chip">Automated Testing</span>
-                                    <span class="skill-chip">Automated Workflows</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Chapter 6: Contact Form (Absolute Black #000000) -->
-        <section id="contact" class="editorial-chapter dark-scene">
-            <div class="container">
-                <div class="editorial-grid">
-                    <div class="editorial-left reveal">
-                        <span class="section-eyebrow">CONNECT</span>
-                        <h2 class="section-headline">Let's collaborate.</h2>
-                        <p class="contact-pitch">
-                            If you're looking for a developer to architect systems or design elegant user interfaces, let's chat. I'm always open to discussing new opportunities.
-                        </p>
-                        
-                        <div class="contact-details-list">
-                            <div class="contact-detail-item">
-                                <span class="label">EMAIL</span>
-                                <div class="copy-email-wrapper">
-                                    <a href="mailto:shamirk2121@gmail.com" class="value-link">shamirk2121@gmail.com</a>
-                                    <button type="button" id="copy-email-btn" class="copy-pill-btn" title="Copy email address" aria-label="Copy email">
-                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                                        <span id="copy-email-label">Copy</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="contact-detail-item">
-                                <span class="label">PHONE</span>
-                                <span class="value-text">(647)-606-6063</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="editorial-right reveal reveal-delay">
-                        <!-- Apple-style Retail Form -->
-                        <div class="form-container">
-                            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                                <input type="hidden" name="access_key" value="56caa3ed-7e0a-43bc-9a0d-bc6474043f78">
-                                <div class="form-group-row">
-                                    <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" id="name" name="name" required placeholder="Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="email" id="email" name="email" required placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
-                                </div>
-                                <button type="submit" class="btn-submit">
-                                    <span>Send Message</span>
-                                </button>
-                            </form>
-                            <div id="form-status" class="form-status-msg"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="global-footer">
-        <div class="container footer-container">
-            <div class="footer-links">
-                <a href="https://linkedin.com/in/shamir-khan-40698123b" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
-                <a href="https://github.com/shamir-khan-dev" target="_blank" rel="noopener" class="footer-link">GitHub</a>
-                <a href="mailto:shamirk2121@gmail.com" class="footer-link">Email</a>
-            </div>
-            <p class="footer-copyright">
-                &copy; <span id="current-year">2026</span> Shamir Khan. All rights reserved.
-            </p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
     <script src="script.js"></script>
-
-        <!-- Apple-Style Resume Preview Modal -->
-    <div id="resume-modal" class="resume-modal" aria-hidden="true" role="dialog" aria-labelledby="resume-modal-title">
-        <div class="resume-modal-backdrop" data-close-modal></div>
-        <div class="resume-modal-container">
-            <div class="resume-modal-header">
-                <div class="resume-modal-title-group">
-                    <h3 id="resume-modal-title" class="resume-modal-title">Shamir Khan   Resume</h3>
-                    <span class="resume-modal-badge">Verified 1-Page Master &bull; Latest</span>
-                </div>
-                <div class="resume-modal-actions">
-                    <button type="button" id="resume-zoom-out" class="resume-modal-icon-btn" title="Zoom Out" aria-label="Zoom Out">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                    </button>
-                    <span id="resume-zoom-level" class="resume-zoom-level">100%</span>
-                    <button type="button" id="resume-zoom-in" class="resume-modal-icon-btn" title="Zoom In" aria-label="Zoom In">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                    </button>
-                    <button type="button" id="resume-copy-link" class="resume-modal-btn" title="Copy shareable link">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                        <span id="copy-btn-text">Share</span>
-                    </button>
-                    <a href="assets/Shamir_Khan_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-modal-btn" title="Open PDF in new tab">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                        <span>Open Tab</span>
-                    </a>
-                    <a href="assets/Shamir_Khan_Resume.pdf" download class="resume-modal-btn resume-modal-btn-primary" title="Download PDF">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                        <span>Download</span>
-                    </a>
-                    <button type="button" class="resume-modal-close" data-close-modal aria-label="Close modal">&times;</button>
-                </div>
-            </div>
-            <div class="resume-modal-body" id="resume-modal-scroll">
-                <div class="resume-sheet-wrapper">
-                    <img id="resume-preview-image" src="assets/resume_preview.webp" alt="Shamir Khan Software Engineering Resume Preview" class="resume-sheet-img">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Floating Apple-Style Toast Notification -->
-    <div id="apple-toast" class="apple-toast" aria-live="polite"></div>
 </body>
 </html>
