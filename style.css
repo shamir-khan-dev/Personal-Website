@@ -165,31 +165,40 @@ body {
 }
 
 .hero-name {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: var(--text-muted);
   letter-spacing: -0.015em;
 }
 
 .hero-role-headline {
-  font-size: 3.4rem;
+  font-size: 2.35rem;
   font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 1.05;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
   color: var(--text);
-  margin-top: -2px;
+  margin-top: 2px;
+}
+
+.hero-sep {
+  color: var(--accent);
+  margin: 0 4px;
 }
 
 .hero-location-banner {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   background: var(--bg-surface);
   border: 1px solid var(--border);
-  padding: 8px 16px;
-  border-radius: 9999px;
+  padding: 10px 18px;
+  border-radius: 12px;
   width: fit-content;
-  margin-top: 4px;
+  margin-top: 6px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
 }
 
 .hero-location-banner svg {
@@ -198,29 +207,14 @@ body {
 }
 
 .location-bold {
-  font-size: 1.25rem;
-  font-weight: 700;
   color: var(--text);
-  letter-spacing: -0.02em;
-}
-
-.location-divider {
-  color: var(--text-subtle);
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .location-detail {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   font-weight: 500;
-}
-
-.hero-institution {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  letter-spacing: -0.01em;
-  margin-top: 2px;
 }
 
 .hero-bio {
@@ -605,12 +599,16 @@ body {
 /* Mobile responsive */
 @media (max-width: 640px) {
   .hero-role-headline {
-    font-size: 2.3rem;
+    font-size: 1.65rem;
+    line-height: 1.25;
   }
   .hero-location-banner {
-    flex-wrap: wrap;
-    border-radius: 12px;
+    font-size: 1.05rem;
     padding: 8px 12px;
+    flex-wrap: wrap;
+  }
+  .location-detail {
+    font-size: 0.9rem;
   }
   .nav-links {
     display: none;
