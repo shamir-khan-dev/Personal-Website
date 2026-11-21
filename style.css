@@ -452,7 +452,11 @@ body {
 .experience-item {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 12px;
 }
 
 .experience-top {
@@ -460,13 +464,15 @@ body {
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 6px;
 }
 
 .experience-role {
-  font-weight: 700;
-  font-size: 1.05rem;
+  font-weight: 800;
+  font-size: 1.45rem;
   color: var(--text);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
 }
 
 .experience-date {
@@ -477,9 +483,10 @@ body {
 }
 
 .experience-company {
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   color: var(--accent);
   font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .experience-bullets {
